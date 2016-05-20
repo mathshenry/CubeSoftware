@@ -32,6 +32,7 @@ echo "<h2>" . "Gerenciar Usuários" . "</h2>";
 <BASEFONT SIZE=4>
 <H2><STRONG><I> CubeRep - Home Page </I></STRONG></H2>
 <P>
+<p align="left"><a href="showusers.php" target="">Listar Usuários</a></p>
 <p align="left"><a href="userform.htm" target="">Cadastrar Usuário</a></p>
 </BODY>
 </HTML>

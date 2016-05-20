@@ -1,15 +1,17 @@
-<HTML>
-<HEAD>
-<TITLE>Novo Usu·rio</TITLE>
-</HEAD>
-<BASEFONT SIZE=4>
-<BODY  TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
-<H2><STRONG><I> Cadastrar Usu·rio </I></STRONG></H2>
+<html>
+<head>
+<title>Novo Usu√°rio</title>
+</head>
+<basefont SIZE=4>
+<body TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
+<H2><STRONG><I> Cadastrar Usu√°rio </I></STRONG></H2>
 <P>
 <?php
 
-$user = md5($_GET['user']);
-$pass = md5($_GET['pass']);
+$usr = simplexml_load_file('usuarios.xml');
+
+$user = md5($_POST['user']);
+$pass = md5($_POST['pass']);
 
 $exists=false;
 if($id_file=file("users_login.dat")){
@@ -23,17 +25,28 @@ if($id_file=file("users_login.dat")){
 
 if($exists==false){
     //Adiciona o novo "usuariosenha" no fim do arquivo
-	print "Usu·rio cadastrado com sucesso!\n";
+    print "Usu√°rio cadastrado com sucesso!\n";
     $id_file=fopen("users_login.dat","a");
     fwrite($id_file, $user . $pass . "\n");
     fclose($id_file);
+
+    $newuser=$usr->addChild('usuario');
+    $newuser->addChild('usuario', $_POST['user']);
+    $newuser->addChild('nome', $_POST['name']);
+    $newuser->addChild('email', $_POST['email']);
+    $newuser->addChild('endereco', $_POST['addr']);
+    $newuser->addChild('tel', $_POST['tel']);
+    $newuser->addChild('perfil', $_POST['perfil']);
+
+    $usr->asXML('usuarios.xml');  
+
 } else {
-    print "Usu·rio j· existe!\n";
+    print "Usu√°rio j√° existe!\n";
 }
-//Escreve o an˙ncio na arquivo corresponde ‡ categoria deste
-print "<p>" . $_GET['user'] . "<p> \n";
-print "<p>" . $_GET['pass'] . "<p> \n";
+print "<p>" . $_POST['user'] . "<p> \n";
+print "<p>" . $_POST['pass'] . "<p> \n";
 ?>
+<p align="left"><a href="showusers.php" target="">Listar Usu√°rios</a></p>
 <p align="left"><a href="admin.php" target="">Pagina Inicial</a></p>
-</BODY>
-</HTML>
+</body>
+</html>
