@@ -11,4 +11,6 @@ https://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.
 
 2 - Crie uma pasta em c:\wamp64\www e coloque todos os arquivos da branch lá (ex. c:\wamp64\www\cuberep).
 
-3 - Execute o programa Wampserver64 ou abra o navegador e digite localhost/nome-da-pasta/nome-do-arquivo (ex. localhost/cuberep/admin.php)
+3 - Execute o programa Wampserver64
+
+4 - No navegador, digite localhost/nome-da-pasta/nome-do-arquivo (ex. localhost/cuberep/admin.php)
