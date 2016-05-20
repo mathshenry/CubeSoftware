@@ -11,19 +11,29 @@
 $usr = simplexml_load_file('usuarios.xml');
 
 foreach ($usr->usuario as $user) {
-    if(isset($_GET['perfil'])){
-        if(!strcmp(strval($usr->perfil),$_GET['perfil'])){
-        echo ("<H2><STRONG>" . strval($user->nome) . "</STRONG></H2>");
-        echo ("\t" . strval($user->perfil));
+    if(!strcmp(strval($user->usuario),$_GET['detalhes'])){
+        echo ("<H2><STRONG>" . strval($user->nome) . 
+            "</STRONG></H2>");
         echo("<P>\n");
-        echo "<a ref='showusers.php?detalhes=" . $user->usuario . ">detalhes</a>";
-        }    
-    } else {
-        echo ("<H3><STRONG>" . strval($user->nome) . "</STRONG></H3>" . strval($user->perfil) . "\t");
-        echo "<a ref='userdetails.php?detalhes=" . $user->usuario . "'target=''>detalhes</a>";
+        echo ("<STRONG>Usuário: </STRONG>" . 
+            strval($user->usuario));
+        echo("<P>\n");
+        echo ("<STRONG>E-mail: </STRONG>" . 
+            strval($user->email));
+        echo("<P>\n");
+        echo ("<STRONG>Endereço: </STRONG>" . 
+            strval($user->endereco));
+        echo("<P>\n");
+        echo ("<STRONG>Telefone: </STRONG>" . 
+            strval($user->tel));
+        echo("<P>\n");
+        echo "\t<a href='deleteuser.php?delete=" . 
+            $user->usuario . "'target=''> Remover Usuário</a>\n";
     }
 }
 ?>
+<P\n\n>
+<p align="left"><a href="showusers.php" target="">Listar Usuários</a></p>
 <p align="left"><a href="admin.php" target="">Pagina Inicial</a></p>
 </body>
 </html>
