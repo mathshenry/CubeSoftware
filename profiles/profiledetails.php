@@ -23,7 +23,7 @@ foreach ($profiles->perfil as $profile) {
         echo("<P>\n");
         echo "<STRONG>Permissões: </STRONG>";
         echo("<P>\n");
-        echo "Usuários: ";
+        echo "Usuários: " .
             strval($profile->usuarios);
         echo("<P>\n");
         echo ("Perfis: " . 
@@ -31,7 +31,7 @@ foreach ($profiles->perfil as $profile) {
         echo("<P>\n");
         echo "\t<a href='deleteprofile.php?delete=" . 
             $profile->nome . "' target='principal'> Remover Perfil</a>\n";
-        echo "\t<a href='updateprofile.php?mode=update&profile="
+        echo "\t<a href='updateprofile.php?mode=update&name="
             . strval($profile->nome) . 
             "&details=" . strval($profile->detalhes) .
             "&users=" . strval($profile->usuarios) .

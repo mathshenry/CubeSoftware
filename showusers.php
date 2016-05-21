@@ -11,6 +11,7 @@
 session_start();
 if(isset($_SESSION['login_user']))
 {
+
 $usr = simplexml_load_file('usuarios.xml');
 
 foreach ($usr->usuario as $user) {
@@ -30,7 +31,10 @@ foreach ($usr->usuario as $user) {
             $user->usuario . "'target='principal'>detalhes</a>\n";
         echo("<P>\n");
     }
-}}
+}
+} else {
+    echo "<br><center><h4> Precisa efetuar login.</h4></center>";
+}
 ?>
 <p align="left"><a href="showusers.php" target="principal">Listar Usuários</a></p>
 <p align="left"><a href="admin.php" target="principal">Pagina Inicial</a></p>
