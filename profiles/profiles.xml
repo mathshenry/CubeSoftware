@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<perfis></perfis>
+<perfis><perfil><nome>Morador</nome><detalhes>Morador</detalhes><usuarios>read</usuarios><perfis>read</perfis></perfil><perfil><nome>Admininstrador</nome><detalhes>Administrador</detalhes><usuarios>write</usuarios><perfis>write</perfis></perfil></perfis>

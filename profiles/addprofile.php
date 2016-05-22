@@ -13,7 +13,7 @@ if($_POST["mode"]=="create"){
 
     $exists=false;
     foreach ($profiles->perfil as $perfil) {
-        if(!strcmp(strval($perfil->nome), $_POST['user'])){
+        if(!strcmp(strval($perfil->nome), $_POST['name'])){
             $exists=true;
             break;
         }
@@ -21,11 +21,11 @@ if($_POST["mode"]=="create"){
 
     if(!$exists){
         //Adiciona info de perfil no arquivo xml
-        $newprofiler=$profiles->addChild('perfil');
-        $newuser->addChild('nome', $_POST['name']);
-        $newuser->addChild('detalhes', $_POST['details']);
-        $newuser->addChild('usuarios', $_POST['users']);
-        $newuser->addChild('perfis', $_POST['profiles']);
+        $newprofile=$profiles->addChild('perfil');
+        $newprofile->addChild('nome', $_POST['name']);
+        $newprofile->addChild('detalhes', $_POST['details']);
+        $newprofile->addChild('usuarios', $_POST['users']);
+        $newprofile->addChild('perfis', $_POST['profiles']);
 
 
     } else {
@@ -40,7 +40,7 @@ if($_POST["mode"]=="create"){
     }
 } else {
     foreach ($profiles->perfil as $perfil) {
-        if(!strcmp(strval($perfil->nome), $_POST['user'])){
+        if(!strcmp(strval($perfil->nome), $_POST['name'])){
             $perfil->nome=$_POST['name'];
             $perfil->detalhes=$_POST['details'];
             $perfil->usuarios=$_POST['users'];
@@ -49,7 +49,7 @@ if($_POST["mode"]=="create"){
     }
 }
 
-$usr->asXML('profiles.xml');  
+$profiles->asXML('profiles.xml');  
 
 ?>
 

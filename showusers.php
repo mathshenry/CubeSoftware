@@ -8,9 +8,13 @@
 <P>
 <?php
 
+<<<<<<< Updated upstream
+=======
 session_start();
 if(isset($_SESSION['login_user']))
 {
+
+>>>>>>> Stashed changes
 $usr = simplexml_load_file('usuarios.xml');
 
 foreach ($usr->usuario as $user) {
@@ -20,19 +24,25 @@ foreach ($usr->usuario as $user) {
             "</STRONG></H2>");
         echo ("\t" . strval($user->perfil));
         echo("<P>\n");
-        echo "<a href='showusers.php?detalhes=" . 
-            $user->usuario . "' target='principal'>detalhes</a>";
+        echo "<a ref='showusers.php?detalhes=" . 
+            $user->usuario . ">detalhes</a>";
         }    
     } else {
         echo ("<STRONG>" . strval($user->nome) . 
             "</STRONG>\t\t" . strval($user->perfil) . "  ");
         echo "\t<a href='userdetails.php?detalhes=" . 
-            $user->usuario . "'target='principal'>detalhes</a>\n";
+            $user->usuario . "'target=''>detalhes</a>\n";
         echo("<P>\n");
     }
-}}
+}
+<<<<<<< Updated upstream
+=======
+} else {
+    echo "<br><center><h4> Precisa efetuar login.</h4></center>";
+}
+>>>>>>> Stashed changes
 ?>
-<p align="left"><a href="showusers.php" target="principal">Listar Usuários</a></p>
-<p align="left"><a href="admin.php" target="principal">Pagina Inicial</a></p>
+<p align="left"><a href="showusers.php" target="">Listar Usuários</a></p>
+<p align="left"><a href="admin.php" target="">Pagina Inicial</a></p>
 </body>
 </html>

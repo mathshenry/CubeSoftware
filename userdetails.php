@@ -28,18 +28,11 @@ foreach ($usr->usuario as $user) {
             strval($user->tel));
         echo("<P>\n");
         echo "\t<a href='deleteuser.php?delete=" . 
-            $user->usuario . "' target='principal'> Remover Usuário</a>\n";
-        echo "\t<a href='updateuser.php?mode=update&user="
-            . strval($user->usuario) . 
-            "&name=" . strval($user->nome) .
-            "&addr=" . strval($user->endereco) .
-            "&tel=" . strval($user->tel) .
-            "&email=" . strval($user->email) .
-            "' target='principal'> Editar Informações</a>\n";
+            $user->usuario . "'target=''> Remover Usuário</a>\n";
     }
 }
 ?>
-<P\n>
+<P\n\n>
 <p align="left"><a href="showusers.php" target="">Listar Usuários</a></p>
 <p align="left"><a href="admin.php" target="">Pagina Inicial</a></p>
 </body>

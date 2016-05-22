@@ -1,31 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!DOCTYPE html>
 <html>
-
 <head>
-<meta name="FORMATTER" content="Microsoft FrontPage 2.0">
-<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
-<title>Contents do Classificados</title>
-<base target="main">
+<link rel="stylesheet" href="cssstyle.css">
 </head>
 
-<body bgcolor="#000000" text="#FFFFFF" link="#FFFF00"
-vlink="#FFFFFF" alink="#FF00FF">
+<body>
+<div w3-include-html="menu.html"></div>
 
-<p align="center">&nbsp;</p>
-<p align="center">&nbsp;</p>
-
-<p align="center"><a href="showusers.php" target="principal">Listar Usuários</a></p>
-<p align="center"><a href="updateuser.php?mode=create" target="principal">Cadastrar Usuário</a></p>
-
-<p align="center"><a href="profiles/showprofiles.php" target="principal">Listar Perfis</a></p>
-<p align="center"><a href="profiles/updateprofile.php?mode=create" target="principal">Cadastrar Perfil</a></p>
-<p align="center">&nbsp;</p>
-
-<p align="center"><a href="frclass.htm"
-target="main">Página Principal</a></p>
+<script>
+w3IncludeHTML();
+</script>
 
 <?php
-
 session_start();
 
 if(isset($_SESSION['login_user'])) {

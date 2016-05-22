@@ -13,15 +13,15 @@ if(isset($_SESSION['login_user']))
 {
 $profiles = simplexml_load_file('profiles.xml');
 
-foreach ($profiles->nome as $profile) {
-        echo ("<STRONG>" . strval($profile->nome) . "  ");
-        echo "\t<a href='userdetails.php?detalhes=" . 
-            $user->usuario . "'target='principal'>detalhes</a>\n";
+foreach ($profiles->perfil as $profile) {
+        echo "<STRONG>" . strval($profile->nome) . "</STRONG>   ";
+        echo "<a href='profiledetails.php?detalhes=" . 
+            $profile->nome . "'target='principal'>detalhes</a>\n";
         echo("<P>\n");
     }
 }
 ?>
-<p align="left"><a href="showusers.php" target="principal">Listar Usuários</a></p>
+<p align="left"><a href="showprofiles.php" target="principal">Listar Perfis</a></p>
 <p align="left"><a href="admin.php" target="principal">Pagina Inicial</a></p>
 </body>
 </html>
