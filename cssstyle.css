@@ -1,5 +1,5 @@
 body{
-    background-color: #444444;
+    background-color: #333333;
 }
 menu {
     list-style-type: none;
@@ -7,17 +7,19 @@ menu {
     border: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #666666;
+    background-color: #777777;
     color: white;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-li {
-    float: left;
+cad a{
+    color: white;
 }
+
 li a {
+    float: left;
     color: white;
     text-align: center;
     display: block;
@@ -33,7 +35,7 @@ li a:hover:not(.active) {
     color: white;
 }
 
-input[type=text]{
+input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -41,15 +43,23 @@ input[type=text]{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: white;
+    border: 0;
 }
 
-input[type=password]{
+input[type=submit]{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
+    background-color: #2C308F;
+    color: white;
+    padding: 14px 20px;
     border-radius: 4px;
-    box-sizing: border-box;
+    cursor: pointer;
+    border: 0;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: #1C205F;
 }
 
 session{
@@ -60,15 +70,26 @@ session{
     text-align: center;
 }
 
-div {
+login div{
     width: 300px;
-    height: 200px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
     border-radius: 10px;
-    background-color: #666666;
+    background-color: #777777;
     color:white;
     padding: 50px;
 }
 
+cad div{
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: #777777;
+    color:white;
+    padding: 50px;
+}

@@ -1,10 +1,9 @@
-<HTML>
-<HEAD>
-<TITLE>Usuários</TITLE>
-</HEAD>
-<BODY  TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
-<h1>Cadastrar Usuário</h1>
-<hr>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="cssstyle.css">
+</head>
+
 <?php
 
 $name="";
@@ -28,37 +27,35 @@ if (isset($_GET['mes'])){
 ?>
 
 <form action='adduser.php' method='POST' enctype='multipart/form-data'>
+<cad><div> 
 <?php
-
 echo '<input type="hidden" name="mode" value="' . $_GET['mode'] . '">';
-echo '<p>Nome: ';
-echo '<input type="text" size="20" name="name" 
+echo '<label for="name">Nome: </label>';
+echo '<input type="text" id="name" name="name" 
     value="' . $name . '">';
-echo '<p>Login: ';
+echo '<label for="user">Login: </label>';
 if (!strcmp($_GET['mode'],"create")){
-    echo '<input type="text" size="20" name="user"
+    echo '<input type="text" id="user" name="user"
         value="' . $user . '">';
+    echo '<label for="pass">Senha: </label>';
+    echo '<input type="password" id="pass" name="pass"
+        value="' . $pass . '">';
 } else {
     echo '<input type="hidden" name="user"
         value="' . $user . '">';
     echo $user;
-}
-echo '<p>Senha: ';
-if (!strcmp($_GET['mode'],"create")){
-    echo '<input type="text" size="20" name="pass"
-        value="' . $pass . '">';
-} else {
+    echo '<p>Senha: ';
     echo "<a href='changepass.php?user=" .
-        $user . "' target='principal'> Alterar senha</a>";
+        $user . "'> Alterar senha</a>";
 }
-echo '<p>E-mail: ';
-echo '<input type="text" size="20" name="email"
+echo '<label for="email">E-mail: </label>';
+echo '<input type="email" id="email" name="email"
     value="' . $email . '">';
-echo '<p>Endereço: ';
-echo '<input type="text" size="20" name="addr"
+echo '<label for="addr">Endereço: </label>';
+echo '<input type="text" id="addr" name="addr"
     value="' . $addr . '">';
-echo '<p>Telefone: ';
-echo '<input type="text" size="20" name="tel"
+echo '<label for="tel">Telefone: </label>';
+echo '<input type="number" id="tel" name="tel"
     value="' . $tel . '">';
 
 echo 'Perfil: <select name="perfil">';
@@ -70,6 +67,7 @@ echo '<p>';
 echo '<input type="submit" name="Submit" value="Enviar">';
 echo '</p>';
 echo '</form>';
+echo '</cad></div>';
 ?>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

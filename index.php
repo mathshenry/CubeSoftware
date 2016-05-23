@@ -13,7 +13,7 @@ href="updateuser.php?mode=create">Cadastrar Usuário</a></li>
 <li><a
 href="profiles/showprofiles.php">Listar Perfis</a></li>
 <li><a
-href="profiles/updateprofile.php?mode=create" target="principal">Cadastrar Perfil</a></li>
+href="profiles/updateprofile.php?mode=create">Cadastrar Perfil</a></li>
 
 <?php
 session_start();
@@ -65,7 +65,7 @@ if(!isset($_SESSION['login_user'])) {
         header("Location: " . $redirect); 
     } else {
         ?>
-        <div> 
+        <login><div> 
         <form method="POST" action="contclass.php">
 
         <?php
@@ -83,7 +83,8 @@ if(!isset($_SESSION['login_user'])) {
         <input type="submit" name="submit" value="Entrar">
         
         </form>
-        </div>
+        <center><cad><a href="updateuser.php?mode=create">Cadastrar</a></cad></center>
+        </login></div>
         <?php
     }
 }
