@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="cssstyle.css">
-</head>
-
-<body>
-<menu>
-<li><a
-href="showusers.php">Listar Usuários</a></li>
-<li><a
-href="updateuser.php?mode=create">Cadastrar Usuário</a></li>
-<li><a
-href="profiles/showprofiles.php">Listar Perfis</a></li>
-<li><a
-href="profiles/updateprofile.php?mode=create">Cadastrar Perfil</a></li>
 
 <?php
 session_start();
+include("head.html");
 
-if(isset($_SESSION['login_user'])) {
-    echo "<session> " . 
-        $_SESSION['login_user'] . 
-        "</session>";
-    echo "<a href='userdetails.php?detalhes=".
-    $_SESSION["login_user"]."' target='principal'>Meus Dados</a></center></font>";
-    echo "<center><font size='2.1'><a href='closesession.php' target='contents'>Sair</a></center></font>";
-}
-?>
-
-</menu>
-
-<?php
 if(!isset($_SESSION['login_user'])) {
 
     $user="";
@@ -59,19 +33,19 @@ if(!isset($_SESSION['login_user'])) {
 
     if($success){
         $_SESSION['login_user']=$_POST['user'];
-        $redirect="home.php";
+        $redirect="index.php";
         if(isset($_GET['redirect']))
             $redirect=$_GET['redirect'];
         header("Location: " . $redirect); 
     } else {
         ?>
-        <login><div> 
-        <form method="POST" action="contclass.php">
+        <div class="div-login"> 
+        <form method="POST" action="index.php">
 
         <?php
         if (isset($_POST['user']) and isset($_POST['pass'])){
-            echo "<font size='2.1' color='red'>
-            Usuário/senha incorretos</font>"; 
+            echo "<center><label class='login_err'>" . 
+            "Usuário/senha incorretos</label></center><br>"; 
         } ?>
         <label for="user">Usuário:</label><br>
 

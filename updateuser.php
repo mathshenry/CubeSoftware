@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="cssstyle.css">
-</head>
-
 <?php
+session_start();
+include("head.html");
 
 $name="";
 $user="";
@@ -27,18 +25,18 @@ if (isset($_GET['mes'])){
 ?>
 
 <form action='adduser.php' method='POST' enctype='multipart/form-data'>
-<cad><div> 
+<div class="div-cad"> 
 <?php
 echo '<input type="hidden" name="mode" value="' . $_GET['mode'] . '">';
 echo '<label for="name">Nome: </label>';
-echo '<input type="text" id="name" name="name" 
+echo '<input type="text" required=true id="name" name="name" 
     value="' . $name . '">';
 echo '<label for="user">Login: </label>';
 if (!strcmp($_GET['mode'],"create")){
-    echo '<input type="text" id="user" name="user"
+    echo '<input type="text" required=true id="user" name="user"
         value="' . $user . '">';
     echo '<label for="pass">Senha: </label>';
-    echo '<input type="password" id="pass" name="pass"
+    echo '<input type="password" required=true id="pass" name="pass"
         value="' . $pass . '">';
 } else {
     echo '<input type="hidden" name="user"
@@ -49,13 +47,13 @@ if (!strcmp($_GET['mode'],"create")){
         $user . "'> Alterar senha</a>";
 }
 echo '<label for="email">E-mail: </label>';
-echo '<input type="email" id="email" name="email"
+echo '<input type="email" required=true id="email" name="email"
     value="' . $email . '">';
 echo '<label for="addr">Endereço: </label>';
 echo '<input type="text" id="addr" name="addr"
     value="' . $addr . '">';
 echo '<label for="tel">Telefone: </label>';
-echo '<input type="number" id="tel" name="tel"
+echo '<input type="tel" maxlength="11" id="tel" name="tel"
     value="' . $tel . '">';
 
 echo 'Perfil: <select name="perfil">';

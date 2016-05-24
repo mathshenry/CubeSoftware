@@ -1,17 +1,21 @@
 body{
     background-color: #333333;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 menu {
+    overflow: hide;
     list-style-type: none;
     margin: 0;
     border: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #777777;
     color: white;
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }
 
 cad a{
@@ -23,19 +27,103 @@ li a {
     color: white;
     text-align: center;
     display: block;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
+    width: 120px;
 }
 li a.active {
     background-color: #4C50AF;
     color: white;
 }
 li a:hover:not(.active) {
+    background-color: #4C50AF;
+    color: white;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.menubar{
+    float: left;
+}
+
+.user{
+    float: right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: -2px 8px 16px 0px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.dropdown-content a {
+    background-color: #444444;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .droplbl-menu{
+    background-color: #444444;
+    color: lightgrey;
+}
+
+.dropdown:hover .droplbl-user{
+    background-color: #444444;
+    font-weight: bold;
+    color: orange;
+}
+
+.dropdown-content a:hover{
+    color: white;
+}
+
+.dd-menu a:hover{
+    background-color: #2C308F;
+}
+
+.dd-user a:hover{
+    background-color: orange;
+}
+
+.dropdown:hover .dropdown-content{
+    background-color: #444444;
+    display: block;
+}
+
+.droplbl-menu{
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 14px;
+    width: 120px;
+    text-decoration: none;
+}
+
+.droplbl-menu:hover{
     background-color: #444444;
     color: white;
 }
 
-input{
+.droplbl-user{
+    display: block;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    padding: 14px 50px;
+    margin: 0;
+    border: none;
+}
+
+.droplbl-user:hover{
+    background-color: #BB4400;
+    color: white;
+}
+input, select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -61,28 +149,43 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #1C205F;
 }
-
-session{
-    margin: 0;
+.login_err{
+    color: #CC0000;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
     border: 0;
-    float:right;
-    padding: 14px 16px 0px 30px;
-    text-align: center;
 }
 
-login div{
+input[type=submit]{
+    width: 100%;
+    background-color: #2C308F;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover{
+    background-color: #1C205F;
+}
+
+.div-login{
     width: 300px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
     border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.2);
     background-color: #777777;
     color:white;
     padding: 50px;
 }
 
-cad div{
+.div-cad{
     width: 500px;
     height: auto;
     margin-left: auto;
@@ -93,3 +196,51 @@ cad div{
     color:white;
     padding: 50px;
 }
+
+.div-body{
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    color: #222222;
+    padding: 50px;
+}
+
+h1 {
+    margin-top: 0px;
+    color: #444444;
+    text-align: center;
+    font-size: 54px;
+    font-weight: lighter;
+    font-family: Arial;
+}
+
+#users{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users tr{
+    color: #444444;
+}
+
+#users td{
+    padding: 8px;
+    border-bottom: 1px solid #888888;
+}
+
+#users tr:hover {
+    background-color: gray;
+    color: white;
+}
+
+#users th {
+    padding: 8px;
+    text-align: left;
+    background-color: #2C308F;
+    color: white;
+}
+

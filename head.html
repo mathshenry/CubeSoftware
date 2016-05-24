@@ -1,0 +1,38 @@
+
+<head>
+<link rel="stylesheet" href="cssstyle.css">
+</head>
+<body>
+<?php
+if(isset($_SESSION['login_user'])) {
+?>
+<menu>
+    <li><a
+    href="showusers.php">Usuários
+    </a></li>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>Perfis</label>
+        <div class='dropdown-content dd-menu'>
+            <a
+            href="profiles/showprofiles.php">Listar Perfis
+            </a>
+            <a
+            href="profiles/updateprofile.php?mode=create">Criar
+            </a>
+        </div>
+    </div>
+<?php
+    echo "<div class='dropdown user'>";
+    echo "<right><label class='droplbl-user'>".
+                $_SESSION['login_user']."</label></right>";
+    echo "<div class='dropdown-content dd-user'>";
+    echo "<a href='userdetails.php?detalhes=".
+    $_SESSION["login_user"]."'>Meus Dados</a>";
+    echo "<a href='closesession.php'>Sair</a>";
+    echo "</div>";
+    echo "</div>";
+}
+?>
+</menu>
+
+

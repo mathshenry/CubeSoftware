@@ -1,4 +1,6 @@
 <?php
+session_start();
+include("head.html");
 
 $users_file = file("users_login.dat");
 $user = $_GET['delete'];
@@ -29,3 +31,5 @@ foreach($cad->usuario as $usuario){
 $cad->asXML('usuarios.xml');
 
 ?>
+</body>
+</html>

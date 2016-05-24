@@ -1,48 +1,47 @@
 <html>
-<head>
-<title>Usuários</title>
-</head>
+<?php
+session_start();
+include("head.html");
+?>
 <basefont SIZE=4>
-<body TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
 <H2><STRONG><I>Usuários </I></STRONG></H2>
 <P>
 <?php
 
-<<<<<<< Updated upstream
-=======
-session_start();
 if(isset($_SESSION['login_user']))
 {
 
->>>>>>> Stashed changes
 $usr = simplexml_load_file('usuarios.xml');
 
-foreach ($usr->usuario as $user) {
-    if(isset($_GET['perfil'])){
-        if(!strcmp(strval($usr->perfil),$_GET['perfil'])){
-        echo ("<H2><STRONG>" . strval($user->nome) . 
-            "</STRONG></H2>");
-        echo ("\t" . strval($user->perfil));
-        echo("<P>\n");
-        echo "<a ref='showusers.php?detalhes=" . 
-            $user->usuario . ">detalhes</a>";
-        }    
-    } else {
-        echo ("<STRONG>" . strval($user->nome) . 
-            "</STRONG>\t\t" . strval($user->perfil) . "  ");
-        echo "\t<a href='userdetails.php?detalhes=" . 
-            $user->usuario . "'target=''>detalhes</a>\n";
-        echo("<P>\n");
-    }
-}
-<<<<<<< Updated upstream
-=======
-} else {
-    echo "<br><center><h4> Precisa efetuar login.</h4></center>";
-}
->>>>>>> Stashed changes
+echo "<div class=div-body>";
+echo "<h1>Usuários</h1><br>";
 ?>
-<p align="left"><a href="showusers.php" target="">Listar Usuários</a></p>
-<p align="left"><a href="admin.php" target="">Pagina Inicial</a></p>
+        <table id='users'>
+        <tr>
+        <th>Nome</th>
+        <th>Usuário</th>
+        <th>Perfil</th>
+        <th>Visualizar</th>
+        </tr>
+<?php
+foreach ($usr->usuario as $user) { ?>
+        <tr onclick ="location.href='showusers.php'"><td>
+            <?php
+        echo strval($user->nome) . "</td>";
+        echo "<td>";
+        echo strval($user->usuario) . "</td>";
+        echo "<td>";
+        echo strval($user->perfil) . "</td>";
+        echo "<td>";
+        echo "<a href='showusers.php?detalhes=" . 
+            $user->usuario . "'>detalhes</a>";
+        echo "</td>";
+        echo "</tr>";
+}
+    echo "</table>";
+} else {
+    header("Location: index.php");
+}
+?>
 </body>
 </html>

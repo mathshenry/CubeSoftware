@@ -1,9 +1,9 @@
 <html>
-<head>
-<title>Usuários</title>
-</head>
+<?php
+session_start();
+include("head.html");
+?>
 <basefont SIZE=4>
-<body TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
 <H2><STRONG><I>Usuários </I></STRONG></H2>
 <P>
 <?php
