@@ -1,11 +1,3 @@
-<html>
-<head>
-<title>Novo Perfil</title>
-</head>
-<basefont SIZE=4>
-<body TEXT="#000000" LINK="#0000ff" bgcolor="#FFFFFF">
-<H2><STRONG><I> Cadastrar Perfil </I></STRONG></H2>
-<P>
 <?php
 
 $profiles = simplexml_load_file('profiles.xml');
@@ -26,7 +18,10 @@ if($_POST["mode"]=="create"){
         $newprofile->addChild('detalhes', $_POST['details']);
         $newprofile->addChild('usuarios', $_POST['users']);
         $newprofile->addChild('perfis', $_POST['profiles']);
-
+        $newprofile->addChild('contas', $_POST['bills']);
+        $newprofile->addChild('quartos', $_POST['rooms']);
+        $newprofile->addChild('estoques', $_POST['stocks']);
+        $newprofile->addChild('historicos', $_POST['history']);
 
     } else {
         $mode=$_POST['mode'];
@@ -45,15 +40,15 @@ if($_POST["mode"]=="create"){
             $perfil->detalhes=$_POST['details'];
             $perfil->usuarios=$_POST['users'];
             $perfil->perfis=$_POST['profiles'];
+            $perfil->contas=$_POST['bills'];
+            $perfil->quartos=$_POST['rooms'];
+            $perfil->estoques=$_POST['stocks'];
+            $perfil->historicos=$_POST['history'];
+            break;
         }
     }
 }
 
 $profiles->asXML('profiles.xml');  
-
+Header("Location:profiledetails.php?detalhes=".$_POST['name']);
 ?>
-
-<p align="left"><a href="showprofiles.php" target="principal">Listar Usuários</a></p>
-<p align="left"><a href="admin.php" target="principal">Pagina Inicial</a></p>
-</body>
-</html>

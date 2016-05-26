@@ -15,6 +15,6 @@ foreach($cad->perfil as $perfil){
 #atualizar as informacoes de cadastro
 $cad->asXML('profiles.xml');
 
-echo "<p>" . "Done!" . "</p>";
+Header("Location:showprofiles.php");
 
 ?>

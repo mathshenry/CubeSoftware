@@ -5,7 +5,6 @@ body{
     padding: 0;
 }
 menu {
-    overflow: hide;
     list-style-type: none;
     margin: 0;
     border: 0;
@@ -29,7 +28,7 @@ li a {
     display: block;
     padding: 14px;
     text-decoration: none;
-    width: 120px;
+    width: 90px;
 }
 li a.active {
     background-color: #4C50AF;
@@ -96,11 +95,12 @@ li a:hover:not(.active) {
 }
 
 .droplbl-menu{
+    display: inline;
     color: white;
     text-align: center;
     display: block;
     padding: 14px;
-    width: 120px;
+    width: 90px;
     text-decoration: none;
 }
 
@@ -110,20 +110,22 @@ li a:hover:not(.active) {
 }
 
 .droplbl-user{
+    text-decoration: none;
     display: block;
     color: white;
     background-color: orange;
     text-align: center;
-    padding: 14px 50px;
+    padding: 14px;
     margin: 0;
     border: none;
+    width: 90px;
 }
 
 .droplbl-user:hover{
     background-color: #BB4400;
     color: white;
 }
-input, select{
+input, textarea, select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -149,8 +151,9 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: #1C205F;
 }
+
 .login_err{
-    color: #CC0000;
+    color: #BB0000;
     border-radius: 3px;
     padding: 5px;
     width: 100%;
@@ -198,7 +201,7 @@ input[type=submit]:hover{
 }
 
 .div-body{
-    width: 800px;
+    width: 60%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -209,13 +212,59 @@ input[type=submit]:hover{
     padding: 50px;
 }
 
-h1 {
+.p-p {
+    margin: 0px 0px 4px 18px;
+    overflow: hidden;
+}
+
+.div-p{
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid darkgrey;
+}
+
+.div-p:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.div-pd{
+}
+
+h1, h2 {
     margin-top: 0px;
-    color: #444444;
-    text-align: center;
-    font-size: 54px;
+    padding: 0px;
+    color: #darkblue;
     font-weight: lighter;
     font-family: Arial;
+}
+
+h1{
+    text-align: center;
+    font-size: 54px;
+}
+
+h2{
+    margin-bottom: 0px;
+    color: darkorange;
+    text-align: left;
+    font-size: 42px;
+}
+
+h3{
+    text-align: center;
+    font-size: 24px;
+    color: #444444;
+}
+
+h4{
+    padding: 0px 8px 0px 8px;
+    margin: 0px 8px 2px 8px;
+    text-align: left;
+    color: #444444;
+    font-weight: lighter;
+    font-size: 18px;
 }
 
 #users{
@@ -235,6 +284,7 @@ h1 {
 #users tr:hover {
     background-color: gray;
     color: white;
+    cursor: pointer;
 }
 
 #users th {
