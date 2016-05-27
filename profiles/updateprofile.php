@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<link rel='stylesheet' href='../cssstyle.css'>
+</head>
+<body>
+
 <?php
 session_start();
+include("../lib.php");
 include("../head.html");
+
+if(!Allowed('profiles','update')){
+    Header("location: ../access_denied.php");
+    exit;
+}
+
 ?>
-<form action='addprofile.php' method='POST' enctype='multipart/form-data'>
 <div class="div-cad"> 
 <h1>Novo Perfil</h1>
 
@@ -70,7 +82,7 @@ if (isset($_GET['mes'])){
         "Nome de perfil já existe!</label></center><br>";
 }
 
-
+echo "<form action='addprofile.php' method='POST' enctype='multipart/form-data'>";
 echo '<input type="hidden" name="mode" value="' . $_GET['mode'] . '">';
 echo '<p>Nome: ';
 echo '<input type="text" required name="name" ' .$readonly.

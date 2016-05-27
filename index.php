@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+<link rel='stylesheet' href='cssstyle.css'>
+</head>
+<body>
+
 <?php
 session_start();
 include("head.html");
@@ -58,7 +63,6 @@ if(!isset($_SESSION['login_user'])) {
         <?php
     }
 }
-
 ?>
 
 </body>

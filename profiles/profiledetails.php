@@ -1,14 +1,29 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+<link rel='stylesheet' href='../cssstyle.css'>
+</head>
+<body>
+
 <?php
 session_start();
+include("../lib.php");
 include("../head.html");
 
-$profiles = simplexml_load_file('profiles.xml');
+if(!Allowed('profiles', 'read')){
+    Header("location: ../access_denied.php");
+    exit;
+}
+
 
 echo "<div class=div-body>";
 
+$profilename=$_GET['detalhes'];
+$profiles = simplexml_load_file('profiles.xml');
+
 foreach ($profiles->perfil as $profile) {
-    if(!strcmp(strval($profile->nome),$_GET['detalhes'])){
+    if(!strcmp(strval($profile->nome),$profilename)){
         echo ("<H2><STRONG>" . strval($profile->nome) . 
             "</STRONG></H2>");
         echo("<P>\n");

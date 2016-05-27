@@ -1,5 +1,14 @@
 <?php
 
+session_start();
+include("../lib.php");
+
+if(!Allowed('profiles', 'write')){
+    Header("location: ../access_denied.php");
+    exit;
+}
+
+
 $profiles = simplexml_load_file('profiles.xml');
 if($_POST["mode"]=="create"){
 
