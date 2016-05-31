@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<contas><conta><id>0</id><titulo>Copasa</titulo><detalhes></detalhes><recebimento></recebimento><vencimento>0001-11-11</vencimento><valor>00.00</valor><local></local><usuresp>Me</usuresp><status>Pendente</status><formapag><dinheiro></dinheiro><cartao></cartao><cheque></cheque><boleto></boleto></formapag></conta></contas>

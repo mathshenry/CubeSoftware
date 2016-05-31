@@ -24,7 +24,7 @@ $profiles = simplexml_load_file('profiles.xml');
 
 foreach ($profiles->perfil as $profile) {
     if(!strcmp(strval($profile->nome),$profilename)){
-        echo ("<H2><STRONG>" . strval($profile->nome) . 
+        echo ("<H2 class='profiles'><STRONG>" . strval($profile->nome) . 
             "</STRONG></H2>");
         echo("<P>\n");
         echo ("<STRONG><label for='permission'>Descrição: </label></STRONG>" . 

@@ -7,9 +7,15 @@ function Allowed($crud, $op){
     switch($crud){
         case 'users':
             $profiles_path='../profiles/';
+            $bills_path='../bills/';
             break;
         case 'profiles':
             $users_path='../users/';
+            $bills_path='../bills/';
+            break;
+        case 'bills':
+            $users_path='../users/';
+            $profiles_path='../profiles/';
             break;
         default:
             $users_path="users/";
@@ -41,6 +47,9 @@ function Allowed($crud, $op){
                         if($_SESSION['login_user']==$username)
                             return true;
                         $param1=(string)$perfil->usuarios;
+                        break;
+                    case 'bills':
+                        $param1=(string)$perfil->contas;
                         break;
                     default:
                         return false;

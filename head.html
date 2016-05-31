@@ -2,12 +2,56 @@
 if(isset($_SESSION['login_user'])) {
 ?>
 <menu>
-    <li><a
-    href="/cuberep/CubeSoftware/users/showusers.php">Usuários
+    <li><a class='users'
+    href="/cuberep/CubeSoftware/users/showusers.php">USUÁRIOS
     </a></li>
     <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Perfis</label>
-        <div class='dropdown-content dd-menu'>
+    <label class='droplbl-menu'>TAREFAS</label>
+        <div class='dropdown-content tasks dd-menu'>
+            <a
+            href="/cuberep/CubeSoftware/tasks/showtasks.php">Listar Tarefas
+            </a>
+            <a
+            href="/cuberep/CubeSoftware/tasks/updatetask.php?mode=create">Nova Tarefa
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>CONTAS</label>
+        <div class='dropdown-content bills dd-menu'>
+            <a
+            href="/cuberep/CubeSoftware/bills/showbills.php">Visualizar
+            </a>
+            <a
+            href="/cuberep/CubeSoftware/bills/updatebill.php?mode=create">Cadastrar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>QUARTOS</label>
+        <div class='dropdown-content rooms dd-menu'>
+            <a
+            href="/cuberep/CubeSoftware/rooms/showrooms.php">Relação de Quartos
+            </a>
+            <a
+            href="/cuberep/CubeSoftware/rooms/updateroom.php?mode=create">Adicionar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>ESTOQUES</label>
+        <div class='dropdown-content stocks dd-menu'>
+            <a
+            href="/cuberep/CubeSoftware/stocks/showstocks.php">Visualizar
+            </a>
+            <a
+            href="/cuberep/CubeSoftware/stocks/updatestock.php?mode=create">Cadastrar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>PERFIS</label>
+        <div class='dropdown-content dd-menu profiles'>
             <a
             href="/cuberep/CubeSoftware/profiles/showprofiles.php">Listar Perfis
             </a>
@@ -16,44 +60,10 @@ if(isset($_SESSION['login_user'])) {
             </a>
         </div>
     </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Contas</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="/cuberep/CubeSoftware/profiles/showbills.php">Visualizar
-            </a>
-            <a
-            href="/cuberep/CubeSoftware/profiles/updatebill.php?mode=create">Cadastrar
-            </a>
-        </div>
-    </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Quartos</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="profiles/showrooms.php">Relação de Quartos
-            </a>
-            <a
-            href="profiles/updateroom.php?mode=create">Adicionar
-            </a>
-        </div>
-    </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Estoques</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="/cuberep/CubeSoftware/profiles/showstocks.php">Visualizar
-            </a>
-            <a
-            href="/cuberep/CubeSoftware/profiles/updatestock.php?mode=create">Cadastrar
-            </a>
-        </div>
-    </div>
-
 <?php
     echo "<div class='dropdown user'>";
     echo "<right><label class='droplbl-user'>".
-                $_SESSION['login_user']."</label></right>";
+            $_SESSION['login_user']."</label></right>";
     echo "<div class='dropdown-content dd-user'>";
     echo "<a href='/cuberep/CubeSoftware/users/userdetails.php?detalhes=".
     $_SESSION["login_user"]."'>Meus Dados</a>";

@@ -18,14 +18,12 @@ if(!Allowed('users', 'read')){
 
 
 echo "<div class=div-body>";
-echo "<h1>Usuários</h1><br>";
+echo "<h1>Usuários</h1><br><br>";
 ?>
         <table id='users'>
-        <tr>
         <th>Nome</th>
         <th>Usuário</th>
         <th>Perfil</th>
-        </tr>
 <?php
 $usr = simplexml_load_file('usuarios.xml');
 foreach ($usr->usuario as $user) {

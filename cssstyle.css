@@ -17,11 +17,25 @@ menu {
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }
 
-cad a{
+.cad-link {
     color: white;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0 12px;
+    display:inline-block;
+    background-color: #00CC00;
+    margin-top: 8px
+}
+
+.cad-link:hover {
+    background-color: green;
 }
 
 li a {
+    font-family: Arial;
     float: left;
     color: white;
     text-align: center;
@@ -34,8 +48,14 @@ li a.active {
     background-color: #4C50AF;
     color: white;
 }
+
 li a:hover:not(.active) {
     background-color: #4C50AF;
+    color: white;
+}
+
+li a.users:hover:not(.active) {
+    background-color: orange;
     color: white;
 }
 
@@ -81,9 +101,22 @@ li a:hover:not(.active) {
     color: white;
 }
 
-.dd-menu a:hover{
+.tasks a:hover{
+    background-color: green;
+}
+.bills a:hover{
+    background-color: red;
+}
+.profiles a:hover{
     background-color: #2C308F;
 }
+.rooms a:hover{
+    background-color: purple;
+}
+.stocks a:hover{
+    background-color: brown;
+}
+
 
 .dd-user a:hover{
     background-color: orange;
@@ -95,6 +128,9 @@ li a:hover:not(.active) {
 }
 
 .droplbl-menu{
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 16px;
     display: inline;
     color: white;
     text-align: center;
@@ -137,18 +173,46 @@ input, textarea, select{
     border: 0;
 }
 
-input[type=submit]{
-    width: 100%;
-    background-color: #2C308F;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    border: 0;
-    margin-top: 10px;
+input[type=checkbox]{
+    width:20px;
+    text-decoration: none;
 }
 
-input[type=submit]:hover{
+input[type=submit].users{
+    background-color: darkorange;
+}
+input[type=submit].tasks{
+    background-color: green;
+}
+input[type=submit].bills{
+    background-color: red;
+}
+input[type=submit].rooms{
+    background-color: purple;
+}
+input[type=submit].stocks{
+    background-color: brown;
+}
+input[type=submit].profiles{
+    background-color: #2C308F;
+}
+
+input[type=submit].users:hover{
+    background-color: #E62E00;
+}
+input[type=submit].tasks:hover{
+    background-color: darkgreen;
+}
+input[type=submit].bills:hover{
+    background-color: #BB0000;
+}
+input[type=submit].rooms:hover{
+    background-color: #700070;
+}
+input[type=submit].stocks:hover{
+    background-color: #7a1f1f;
+}
+input[type=submit].profiles:hover{
     background-color: #1C205F;
 }
 
@@ -162,7 +226,6 @@ input[type=submit]:hover{
 
 input[type=submit]{
     width: 100%;
-    background-color: #2C308F;
     color: white;
     padding: 14px 20px;
     border-radius: 4px;
@@ -170,6 +233,7 @@ input[type=submit]{
     border: 0;
     margin-top: 10px;
 }
+
 
 input[type=submit]:hover{
     background-color: #1C205F;
@@ -183,7 +247,7 @@ input[type=submit]:hover{
     margin-top: 80px;
     border-radius: 10px;
     box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.2);
-    background-color: #777777;
+    background-color: lightgrey;
     color:white;
     padding: 50px;
 }
@@ -195,9 +259,9 @@ input[type=submit]:hover{
     margin-right: auto;
     margin-top: 80px;
     border-radius: 10px;
-    background-color: #777777;
-    color:white;
+    color: #444444;
     padding: 50px;
+    background-color: lightgrey;
 }
 
 .div-body{
@@ -213,7 +277,8 @@ input[type=submit]:hover{
 }
 
 .p-p {
-    margin: 0px 0px 4px 6px;
+    padding: 0px 8px 0px 8px;
+    margin: 0px 8px 2px 8px;
     overflow: hidden;
 }
 
@@ -233,16 +298,17 @@ input[type=submit]:hover{
 }
 
 h1, h2 {
-    margin-top: 0px;
+    margin: 0px;
     padding: 0px;
-    color: #darkblue;
     font-weight: lighter;
     font-family: Arial;
 }
 
 h1{
     text-align: center;
-    font-size: 54px;
+    color: #DDDDDD;
+    font-size: 74px;
+    text-shadow: -1px 1px 6px #888888;
 }
 
 h2{
@@ -250,6 +316,31 @@ h2{
     color: darkorange;
     text-align: left;
     font-size: 42px;
+}
+
+h2.users{
+    color: darkorange;
+    text-align: left;
+}
+h2.bills{
+    color: red;
+    text-align: left;
+}
+h2.tasks{
+    color: green;
+    text-align: left;
+}
+h2.profiles{
+    color: blue;
+    text-align: left;
+}
+h2.rooms{
+    color: purple;
+    text-align: left;
+}
+h2.stocks{
+    color: yellow;
+    text-align: left;
 }
 
 h3{
@@ -266,30 +357,53 @@ h4{
     font-size: 18px;
 }
 
-#users{
-    border-collapse: collapse;
-    width: 100%;
+
+tr{
+    background-color: #DDDDDD;
 }
 
-#users tr{
-    color: #444444;
+td{
+    font-family: Arial;
+    font-size: 14px;
+    padding: 8px 8px 8px 18px;
+    border-bottom: 1px solid #BBBBBB;
 }
 
-#users td{
-    padding: 8px;
-    border-bottom: 1px solid #888888;
-}
-
-#users tr:hover {
-    background-color: gray;
+tr:hover {
+    background-color: #BBBBBB;
     color: white;
     cursor: pointer;
 }
-
-#users th {
-    padding: 8px;
-    text-align: left;
-    background-color: #2C308F;
-    color: white;
+#users th{
+    background-color: darkorange;
 }
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: -1px 4px 5px #BFBFBF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#bills th{
+    background-color: red;
+}
+
+th {
+    padding: 8px 0px 8px 18px;
+    text-align: left;
+    color: white;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 15px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -1px -1px 4px #BBBBBB;
+}
+
+req {
+    color: red;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 

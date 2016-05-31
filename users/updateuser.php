@@ -77,7 +77,7 @@ echo '<input type="tel" maxlength="11" id="tel" name="tel"
 echo 'Perfil: <select name="perfil">';
 
 $profiles = simplexml_load_file(
-        'profiles.xml');
+        '../profiles/profiles.xml');
 foreach($profiles->perfil as $perfil){
     $selected="";
     if(!strcmp($profile,strval($perfil->nome))){
@@ -89,7 +89,7 @@ foreach($profiles->perfil as $perfil){
 echo '</select>';
 echo '<hr>';
 echo '<p>';
-echo '<input type="submit" name="Submit" value="Enviar">';
+echo '<input class="users" type="submit" name="Submit" value="Enviar">';
 echo '</p>';
 echo '</form>';
 echo '</cad></div>';

@@ -136,7 +136,7 @@ echo '</select>';
 
 echo '<hr>';
 echo '<p>';
-echo '<input type="submit" name="Submit" value="Enviar">';
+echo '<input type="submit" class="profiles" name="Submit" value="Enviar">';
 echo '</p>';
 echo '</form>';
 echo '</cad></div>';

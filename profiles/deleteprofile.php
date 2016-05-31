@@ -9,7 +9,6 @@ if(!Allowed('profiles', 'write')){
 
 
 $profile = $_GET['delete'];
-$profileh = md5($profile);
 
 $cad = simplexml_load_file('profiles.xml');
 

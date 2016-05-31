@@ -45,7 +45,7 @@ if(!isset($_SESSION['login_user'])) {
     } else {
         ?>
         <div class="div-login"> 
-        <h2>Login</h2><br>
+        <h1>Login</h1><br>
         <form method="POST" action="index.php">
 
         <?php
@@ -53,12 +53,13 @@ if(!isset($_SESSION['login_user'])) {
             echo "<center><label class='login_err'>" . 
             "Usuário/senha incorretos</label></center><br>"; 
         } ?>
-        <input type="text" id="user" name="user" placeholder="Usuário"><br>
+        <input type="text" id="user" name="user" autofocus highlighted placeholder="Usuário"><br>
         <input type="password" id="pass" name="pass" placeholder="Senha"><br>
         <input type="submit" name="submit" value="Entrar">
         
         </form>
-        <center><cad><a href="users/updateuser.php?mode=create">Cadastrar</a></cad></center>
+        <hr>
+        <center><a class="cad-link" href="users/updateuser.php?mode=create">Cadastrar</a></center>
         </login></div>
         <?php
     }
