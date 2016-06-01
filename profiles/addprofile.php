@@ -38,9 +38,13 @@ if($_POST["mode"]=="create"){
             mes=used_name&name=".$_POST['name']."&
             details=".$_POST['details']."&
             users=".$_POST['users']."&
+            bills=".$_POST['bill']."&
+            rooms=".$_POST['rooms']."&
+            stocks=".$_POST['stocks']."&
+            history=".$_POST['history']."&
             profiles=".$_POST['profiles'];
 
-        Header ($redirect);
+        Header ($redirect); Exit;
     }
 } else {
     foreach ($profiles->perfil as $perfil) {

@@ -55,7 +55,7 @@ if(!isset($_SESSION['login_user'])) {
         } ?>
         <input type="text" id="user" name="user" autofocus highlighted placeholder="Usuário"><br>
         <input type="password" id="pass" name="pass" placeholder="Senha"><br>
-        <input type="submit" name="submit" value="Entrar">
+        <input class='users' type="submit" name="submit" value="Entrar">
         
         </form>
         <hr>

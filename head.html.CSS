@@ -2,12 +2,56 @@
 if(isset($_SESSION['login_user'])) {
 ?>
 <menu>
-    <li><a
-    href="/CSS/users/showusers.php">Usuários
+    <li><a class='users'
+    href="/CSS/users/showusers.php">USUÁRIOS
     </a></li>
     <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Perfis</label>
-        <div class='dropdown-content dd-menu'>
+    <label class='droplbl-menu'>TAREFAS</label>
+        <div class='dropdown-content tasks dd-menu'>
+            <a
+            href="/CSS/tasks/showtasks.php">Listar Tarefas
+            </a>
+            <a
+            href="/CSS/tasks/updatetask.php?mode=create">Nova Tarefa
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>CONTAS</label>
+        <div class='dropdown-content bills dd-menu'>
+            <a
+            href="/CSS/bills/showbills.php">Visualizar
+            </a>
+            <a
+            href="/CSS/bills/updatebill.php?mode=create">Cadastrar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>QUARTOS</label>
+        <div class='dropdown-content rooms dd-menu'>
+            <a
+            href="/CSS/rooms/showrooms.php">Relação de Quartos
+            </a>
+            <a
+            href="/CSS/rooms/updateroom.php?mode=create">Adicionar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>ESTOQUES</label>
+        <div class='dropdown-content stocks dd-menu'>
+            <a
+            href="/CSS/stocks/showstocks.php">Visualizar
+            </a>
+            <a
+            href="/CSS/stocks/updatestock.php?mode=create">Cadastrar
+            </a>
+        </div>
+    </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>PERFIS</label>
+        <div class='dropdown-content dd-menu profiles'>
             <a
             href="/CSS/profiles/showprofiles.php">Listar Perfis
             </a>
@@ -16,44 +60,10 @@ if(isset($_SESSION['login_user'])) {
             </a>
         </div>
     </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Contas</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="/CSS/profiles/showbills.php">Visualizar
-            </a>
-            <a
-            href="/CSS/profiles/updatebill.php?mode=create">Cadastrar
-            </a>
-        </div>
-    </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Quartos</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="profiles/showrooms.php">Relação de Quartos
-            </a>
-            <a
-            href="profiles/updateroom.php?mode=create">Adicionar
-            </a>
-        </div>
-    </div>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu'>Estoques</label>
-        <div class='dropdown-content dd-menu'>
-            <a
-            href="/CSS/profiles/showstocks.php">Visualizar
-            </a>
-            <a
-            href="/CSS/profiles/updatestock.php?mode=create">Cadastrar
-            </a>
-        </div>
-    </div>
-
 <?php
     echo "<div class='dropdown user'>";
     echo "<right><label class='droplbl-user'>".
-                $_SESSION['login_user']."</label></right>";
+            $_SESSION['login_user']."</label></right>";
     echo "<div class='dropdown-content dd-user'>";
     echo "<a href='/CSS/users/userdetails.php?detalhes=".
     $_SESSION["login_user"]."'>Meus Dados</a>";

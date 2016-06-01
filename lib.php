@@ -1,25 +1,36 @@
 <?php
 function Allowed($crud, $op){
 
-    $users_path="";
-    $profiles_path="";
-
+    $users_path="../users/";
+    $profiles_path="../profiles/";
+    $bills_path="../bills/";
+    $rooms_path="../rooms/";
+    $tasks_path="../tasks/";
+    $stocks_path="../stocks/";
+    $historys_path="../historys/";
     switch($crud){
         case 'users':
-            $profiles_path='../profiles/';
-            $bills_path='../bills/';
+            $users_path="";
             break;
         case 'profiles':
-            $users_path='../users/';
-            $bills_path='../bills/';
+            $profiles_path="";
             break;
         case 'bills':
-            $users_path='../users/';
-            $profiles_path='../profiles/';
+            $bills_path="";
+            break;
+        case 'rooms':
+            $rooms_path="";
+            break;
+        case 'tasks':
+            $tasks_path="";
+            break;
+        case 'stocks':
+            $stocks_path="";
+            break;
+        case 'historys':
+            $historys_path="";
             break;
         default:
-            $users_path="users/";
-            $profiles_path="profiles/";
     }
         
     $usr = simplexml_load_file($users_path."usuarios.xml");
@@ -48,8 +59,20 @@ function Allowed($crud, $op){
                             return true;
                         $param1=(string)$perfil->usuarios;
                         break;
+                    case 'tasks':
+                        $param1=(string)$perfil->tarefas;
+                        break;
                     case 'bills':
                         $param1=(string)$perfil->contas;
+                        break;
+                    case 'rooms':
+                        $param1=(string)$perfil->quartos;
+                        break;
+                    case 'stocks':
+                        $param1=(string)$perfil->estoques;
+                        break;
+                    case 'historys':
+                        $param1=(string)$perfil->historicos;
                         break;
                     default:
                         return false;

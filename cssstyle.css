@@ -26,12 +26,12 @@ menu {
     text-align: center;
     padding: 12px 0 12px;
     display:inline-block;
-    background-color: #00CC00;
+    background-color: darkslategrey;
     margin-top: 8px
 }
 
 .cad-link:hover {
-    background-color: green;
+    background-color: #1F2F2F;
 }
 
 li a {
@@ -198,7 +198,7 @@ input[type=submit].profiles{
 }
 
 input[type=submit].users:hover{
-    background-color: #E62E00;
+    background-color: orange;
 }
 input[type=submit].tasks:hover{
     background-color: darkgreen;

@@ -53,7 +53,7 @@ foreach ($profiles->perfil as $profile) {
         echo("<P>\n");
             "</div>";
         echo "\t<a href='deleteprofile.php?delete=" . 
-            $profile->nome . "' target='principal'> Remover Perfil</a>\n";
+            $profile->nome . "' > Remover Perfil</a>\n";
         echo "\t<a href='updateprofile.php?mode=update&name="
             . strval($profile->nome) . 
             "&details=" . strval($profile->detalhes) .
