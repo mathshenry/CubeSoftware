@@ -91,8 +91,9 @@ foreach($profiles->perfil as $perfil){
     if(!strcmp($profile,strval($perfil->nome))){
         $selected="selected";
     }
-    echo '<option '.$selected.' value="'.$perfil->nome.'">'.$perfil->nome.
-    '</option>';
+    if($perfil->nome!="Administrador" || $profile=="Administrador")
+        echo '<option '.$selected.' value="'.$perfil->nome.'">'.$perfil->nome.
+        '</option>';
 }
 
 echo '</select>';
