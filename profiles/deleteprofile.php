@@ -1,7 +1,14 @@
 <?php
+session_start();
+include("../lib.php");
+
+if(!Allowed('profiles', 'write')){
+    Header("location: ../access_denied.php");
+    exit;
+}
+
 
 $profile = $_GET['delete'];
-$profileh = md5($profile);
 
 $cad = simplexml_load_file('profiles.xml');
 
@@ -15,6 +22,5 @@ foreach($cad->perfil as $perfil){
 #atualizar as informacoes de cadastro
 $cad->asXML('profiles.xml');
 
-echo "<p>" . "Done!" . "</p>";
-
+Header("Location:showprofiles.php");
 ?>
