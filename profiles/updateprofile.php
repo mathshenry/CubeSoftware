@@ -18,9 +18,14 @@ if(!Allowed('profiles','update')){
 
 ?>
 <div class="div-cad"> 
-<h1>Novo Perfil</h1>
 
 <?php
+
+if($_GET['mode']=='update')
+    echo "<h1>Alterar Perfil</h1><br>";
+else
+echo "<h1>Novo Perfil</h1>";
+
 
 $name="";
 $details="";
@@ -84,7 +89,7 @@ if (isset($_GET['mes'])){
 
 echo "<form action='addprofile.php' method='POST' enctype='multipart/form-data'>";
 echo '<input type="hidden" name="mode" value="' . $_GET['mode'] . '">';
-echo '<p>Nome: ';
+echo '<p>Nome: <req>*</req>';
 echo '<input type="text" required name="name" ' .$readonly.
     ' value="' . $name . '">';
 echo '<p>Descrição: <br>';
@@ -136,7 +141,7 @@ echo '</select>';
 
 echo '<hr>';
 echo '<p>';
-echo '<input type="submit" class="profiles" name="Submit" value="Enviar">';
+echo '<input type="submit" class="profiles" name="Submit" value="Salvar">';
 echo '</p>';
 echo '</form>';
 echo '</cad></div>';

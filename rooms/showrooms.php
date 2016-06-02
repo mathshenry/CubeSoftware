@@ -22,7 +22,7 @@ echo "<h1>Quartos</h1><br><br>";
 $rooms = simplexml_load_file('rooms.xml');
 foreach ($rooms->quarto as $room) {
 
-    echo "<div class=div-p onclick=\"location.href='roomdetails.php?number=".strval($room->numero). "'\">";
+    echo "<div class=div-q onclick=\"location.href='roomdetails.php?number=".strval($room->numero). "'\">";
     echo "<p class='small'><h4>Quarto ". strval($room->numero) ."</h4><br>";
     echo "<p class='small p-p'>Valor: R$". strval($room->valor) . "</p></p>";
     echo "<p class='small p-p'>Tamanho: " . strval($room->tamanho) . "</p></p>";

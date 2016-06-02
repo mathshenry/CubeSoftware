@@ -34,9 +34,15 @@ if($_POST['mode']=='create'){
         $newuser->addChild('usuario', $_POST['user']);
         $newuser->addChild('nome', $_POST['name']);
         $newuser->addChild('email', $_POST['email']);
+        $newuser->addChild('perfil', $_POST['perfil']);
         $newuser->addChild('endereco', $_POST['addr']);
         $newuser->addChild('tel', $_POST['tel']);
-        $newuser->addChild('perfil', $_POST['perfil']);
+        $newuser->addChild('nasc', $_POST['birth']);
+        $newuser->addChild('cidade', $_POST['city']);
+        $newuser->addChild('cep', $_POST['cep']);
+        $newuser->addChild('univ', $_POST['univ']);
+        $newuser->addChild('curso', $_POST['course']);
+        $newuser->addChild('matricula', $_POST['insnum']);
 
         $usr->asXML('usuarios.xml');  
     ?>
@@ -55,9 +61,14 @@ if($_POST['mode']=='create'){
                 "&user=" . $_POST['user'] .
                 "&name=" . $_POST['name'] .
                 "&email=" . $_POST['email'] .
+                "&perfil=" . $_POST['perfil'] .
                 "&addr=" . $_POST['addr'] .
                 "&tel=" . $_POST['tel'] .
-                "&profile=" . $_POST['perfil']);
+                "&city=" . $_POST['city'].
+                "&cep=" . $_POST['cep'].
+                "&univ=" . $_POST['univ'].
+                "&course=" . $_POST['course'].
+                "&insnum=" . $_POST['insnum']);
     }
 } else {
     $usr = simplexml_load_file('usuarios.xml');
@@ -69,6 +80,12 @@ if($_POST['mode']=='create'){
             $user->endereco=$_POST['addr'];
             $user->tel=$_POST['tel'];
             $user->perfil=$_POST['perfil'];
+            $user->nasc=$_POST['birth'];
+            $user->cidade=$_POST['city'];
+            $user->cep=$_POST['cep'];
+            $user->univ=$_POST['univ'];
+            $user->curso=$_POST['course'];
+            $user->matricula=$_POST['insnum'];
         }
     }
     $usr->asXML('usuarios.xml');  

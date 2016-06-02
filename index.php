@@ -59,8 +59,8 @@ if(!isset($_SESSION['login_user'])) {
         
         </form>
         <hr>
-        <center><a class="cad-link" href="users/updateuser.php?mode=create">Cadastrar</a></center>
-        </login></div>
+        <a class="cad-link" href="users/updateuser.php?mode=create">Cadastrar</a>
+        </div>
         <?php
     }
 }

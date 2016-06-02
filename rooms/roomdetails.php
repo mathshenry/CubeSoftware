@@ -26,8 +26,8 @@ foreach ($rooms->quarto as $room) {
     if(!strcmp(strval($room->numero),$room_number)){
 
 
-        echo "<H2 class='rooms'><STRONG>Quarto " . strval($room->numero) . 
-            "</STRONG></H2><br>";
+        echo "<h2 class='rooms'><STRONG>Quarto " . strval($room->numero) . 
+            "</STRONG></h2><br>";
         echo "<p>";
         echo "<STRONG>Valor: </STRONG>R$ " . 
             strval($room->valor);

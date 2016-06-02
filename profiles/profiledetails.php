@@ -17,7 +17,7 @@ if(!Allowed('profiles', 'read')){
 }
 
 
-echo "<div class=div-body>";
+echo "<div class='div-body'>";
 
 $profilename=$_GET['detalhes'];
 $profiles = simplexml_load_file('profiles.xml');
@@ -50,11 +50,11 @@ foreach ($profiles->perfil as $profile) {
         echo("<P>\n");
         echo ("Históricos: " . 
             strval($profile->historicos));
-        echo("<P>\n");
-            "</div>";
-        echo "\t<a href='deleteprofile.php?delete=" . 
+        echo "<P></div>";
+
+        echo "<a href='deleteprofile.php?delete=" . 
             $profile->nome . "' > Remover Perfil</a>\n";
-        echo "\t<a href='updateprofile.php?mode=update&name="
+        echo "<a href='updateprofile.php?mode=update&name="
             . strval($profile->nome) . 
             "&details=" . strval($profile->detalhes) .
             "&users=" . strval($profile->usuarios) .

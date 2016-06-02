@@ -28,23 +28,48 @@ foreach ($usr->usuario as $user) {
         echo "</p><br>";
         echo "<STRONG>Usuário: </STRONG>" . 
             strval($user->usuario);
-        echo "<P>\n";
+        echo "<P>";
         echo "<STRONG>E-mail: </STRONG>" . 
             strval($user->email);
-        echo "<P>\n";
-        echo "<STRONG>Endereço: </STRONG>" . 
-            strval($user->endereco);
-        echo "<P>\n";
+        echo "<P>";
         echo "<STRONG>Telefone: </STRONG>" . 
             strval($user->tel);
-        echo "<P>\n";
-        echo "\t<a href='updateuser.php?mode=update" .
+        echo "<P>";
+        echo "<STRONG>Endereço: </STRONG>";
+        echo "<div class=p-p>";
+        echo "Logradouro: ". strval($user->endereco);
+        echo "<P>";
+        echo "CEP: ". $user->cep;
+        echo "<P>";
+        echo "Cidade/UF: ".$user->cidade;
+        echo "</div>";
+
+        if($user->univ!=""){
+            echo "<P>";
+            echo "<STRONG>Universidade: </STRONG>" . 
+            $user->univ;
+            echo "<P>";
+            echo "<STRONG>Curso: </STRONG>" . 
+            $user->curso;
+            echo "<P>";
+            echo "<STRONG>Nº de Matrícula: </STRONG>" . 
+            $user->matricula;
+
+        }
+        echo "<P>";
+        echo "<a href='updateuser.php?mode=update" .
             "&user=" . strval($user->usuario) .
             "&name=" . strval($user->nome) .
             "&email=" . strval($user->email) .
             "&addr=" . strval($user->endereco) .
             "&tel=" . strval($user->tel) .
-            "&profile=" . strval($user->perfil) .
+            "&birth=" . strval($user->nasc) .
+            "&perfil=" . strval($user->perfil) .
+            "&city=" . strval($user->cidade) .
+            "&cep=" . strval($user->cep) .
+            "&univ=" . strval($user->univ) .
+            "&course=" . strval($user->curso) .
+            "&insnum=" . strval($user->matricula) .
             "'>Alterar</a> ";
         echo "<a href='deleteuser.php?delete=" . 
             $user->usuario . "'> Remover Usuário</a>\n";

@@ -53,7 +53,8 @@ function Allowed($crud, $op){
                         $param1=(string)$perfil->perfis;
                         break;
                     case 'users':
-                        if(isset($_GET['user'])) $username=$_GET['user'];
+                        if(isset($_GET['detalhes'])) $username=$_GET['detalhes'];
+                        elseif(isset($_GET['user'])) $username=$_GET['user'];
                         elseif(isset($_POST['user'])) $username=$_POST['user'];
                         if($_SESSION['login_user']==$username)
                             return true;

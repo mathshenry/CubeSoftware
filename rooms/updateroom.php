@@ -18,9 +18,13 @@ if(!Allowed('rooms','update')){
 
 ?>
 <div class="div-cad"> 
-<h1>Cadastrar Quarto</h1>
 
 <?php
+if($_GET['mode']=='update')
+    echo "<h1>Alterar Dados</h1><br>";
+else
+echo "<h1>Cadastrar Quarto</h1>";
+
 
 $number="";
 $details="";
@@ -55,7 +59,7 @@ echo '<input type="number" required name="number" '.$readonly.' value="' . $numb
 echo '<p>Valor: <req>*</req> ';
 echo '<input type="number" step="0.01" required name="value" value="' . $value . '"><br>';
 
-echo '<p>Tamanho: ';
+echo '<p>Tamanho (em <strong>m²</strong>): ';
 echo '<input type="number" step="0.01" name="size" value="' . $size . '">';
 
 echo '<p>Moradores: <br>';
