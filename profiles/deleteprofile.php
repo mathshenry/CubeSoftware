@@ -1,7 +1,18 @@
 <?php
+session_start();
+include("../lib.php");
+
+if(!Allowed('profiles', 'write')){
+    Header("location: ../access_denied.php");
+    exit;
+}
+
 
 $profile = $_GET['delete'];
-$profileh = md5($profile);
+if($profile=="Administrador" || $profile=="Morador"){
+    Header("location: ../write_profiles_denied.php?mes=O perfil ".$profile." não pode ser removido!");
+    exit;
+}
 
 $cad = simplexml_load_file('profiles.xml');
 
@@ -15,6 +26,5 @@ foreach($cad->perfil as $perfil){
 #atualizar as informacoes de cadastro
 $cad->asXML('profiles.xml');
 
-echo "<p>" . "Done!" . "</p>";
-
+Header("Location:showprofiles.php");
 ?>
