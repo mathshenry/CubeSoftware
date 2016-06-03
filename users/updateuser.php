@@ -3,6 +3,18 @@
 
 <head>
 <link rel='stylesheet' href='../cssstyle.css'>
+
+<script src="../jquery-1.12.4.js" type="text/javascript"></script>
+<script src="../jquery.maskedinput.js" type="text/javascript"></script>
+
+<script>
+jQuery(function($){
+    $("#birth").mask("99/99/9999",{placeholder:""});
+    $("#tel").mask("(99)99999-9999",{placeholder:""});
+    $("#cep").mask("99999-999",{placeholder:""});
+    });
+</script>
+
 </head>
 <body>
 
@@ -91,14 +103,15 @@ foreach($profiles->perfil as $perfil){
     if(!strcmp($profile,strval($perfil->nome))){
         $selected="selected";
     }
-    echo '<option '.$selected.' value="'.$perfil->nome.'">'.$perfil->nome.
-    '</option>';
+    if($perfil->nome!="Administrador" || $profile=="Administrador")
+        echo '<option '.$selected.' value="'.$perfil->nome.'">'.$perfil->nome.
+        '</option>';
 }
 
 echo '</select>';
 
 echo '<label for="birth">Data de Nascimento: <req>*</req></label>';
-echo '<input type="date" required id="birth" name="birth"
+echo '<input type="text" required id="birth" name="birth"
     value="' . $birth . '">';
 
 echo '<label for="city">Cidade/Estado: </label>';
@@ -114,7 +127,7 @@ echo '<input type="text" id="addr" name="addr"
     value="' . $addr . '">';
 
 echo '<label for="tel">Telefone: </label>';
-echo '<input type="tel" maxlength="11" id="tel" name="tel"
+echo '<input type="text" id="tel" name="tel"
     value="' . $tel . '">';
 
 echo '<hr><br><h4> Para universitários: </h4><br>';

@@ -3,6 +3,17 @@
 
 <head>
 <link rel='stylesheet' href='../cssstyle.css'>
+
+<script src="../jquery-1.12.4.js" type="text/javascript"></script>
+<script src="../jquery.maskedinput.js" type="text/javascript"></script>
+
+<script>
+jQuery(function($){
+    $("#deadline").mask("99/99/9999",{placeholder:""});
+    $("#recv").mask("99/99/9999",{placeholder:""});
+    });
+</script>
+
 </head>
 <body>
 
@@ -31,6 +42,7 @@ $deadline="";
 $location="";
 $respuser="";
 $status="";
+$type="";
 
 if (isset($_GET['id'])) $id=$_GET['id'];
 if (isset($_GET['title'])) $title=$_GET['title'];
@@ -41,6 +53,7 @@ if (isset($_GET['deadline'])) $deadline=$_GET['deadline'];
 if (isset($_GET['location'])) $location=$_GET['location'];
 if (isset($_GET['respuser'])) $respuser=$_GET['respuser'];
 if (isset($_GET['status'])) $status=$_GET['status'];
+if (isset($_GET['type'])) $type=$_GET['type'];
 
 $paymethods=array('money'=>'Dinheiro','creditcard'=>'Cartão','check'=>'Cheque','billet'=>'Boleto');
 $checked=array('money'=>'','creditcard'=>'','check'=>'','billet'=>'');
@@ -69,13 +82,30 @@ if ($_GET['mode']=='update'){
 echo '<p>Título: <req>*</req> ';
 echo '<input type="text" required name="title" value="' . $title . '"><br>';
 
-echo '<p>Valor: <req>*</req> ';
-echo '<input type="number" step="0.01" required name="value" value="' . $value . '"><br>';
+echo '<p>Tipo de Conta: <req>*</req> ';
+echo '<select required name="type">';
+
+$billtypes=array("Outros","Aluguel","Luz","Água","Telefone/Internet","Alimentação","Serviços");
+foreach($billtypes as $tipo){
+    $selected="";
+    if($type==$tipo){
+        $selected="selected";
+    }
+    echo '<option '.$selected.' value="'.$tipo.'">'.$tipo.
+        '</option>';
+}
+
+echo '</select>';
+
+
+
+echo '<p>Valor (R$): <req>*</req> ';
+echo '<input type="number" step="0.01" id="value" required name="value" value="' . $value . '"><br>';
 
 echo '<p>Data de Vencimento: <req>*</req> ';
-echo '<input type="date" required name="deadline" value="' . $deadline . '"><br>';
+echo '<input type="text" required id="deadline" name="deadline" value="' . $deadline . '"><br>';
 echo '<p>Data de Recebimento: ';
-echo '<input type="date" name="received" value="' . $received . '">';
+echo '<input type="text" id="recv" name="received" value="' . $received . '">';
 
 echo '<p>Forma de Pagamento: ';
 foreach($paymethods as $pm=>$pmname){

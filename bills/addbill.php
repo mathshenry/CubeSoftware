@@ -26,6 +26,7 @@ if($_POST["mode"]=="create"){
     $newbill=$bills->addChild('conta');
     $newbill->addChild('id', $id);
     $newbill->addChild('titulo', $_POST['title']);
+    $newbill->addChild('tipo', $_POST['type']);
     $newbill->addChild('detalhes', $_POST['details']);
     $newbill->addChild('recebimento', $_POST['received']);
     $newbill->addChild('vencimento', $_POST['deadline']);
@@ -48,6 +49,7 @@ if($_POST["mode"]=="create"){
         $id=$_POST['id'];
         if(!strcmp(strval($conta->id), $id)){
             $conta->titulo=$_POST['title'];
+            $conta->tipo=$_POST['type'];
             $conta->detalhes=$_POST['details'];
             $conta->recebimento=$_POST['received'];
             $conta->vencimento=$_POST['deadline'];

@@ -56,7 +56,7 @@ echo '<input type="hidden" name="mode" value="' . $_GET['mode'] . '">';
 echo '<p>Número: <req>*</req> ';
 echo '<input type="number" required name="number" '.$readonly.' value="' . $number . '"><br>';
 
-echo '<p>Valor: <req>*</req> ';
+echo '<p>Valor(R$): <req>*</req> ';
 echo '<input type="number" step="0.01" required name="value" value="' . $value . '"><br>';
 
 echo '<p>Tamanho (em <strong>m²</strong>): ';

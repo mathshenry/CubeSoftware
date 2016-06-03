@@ -35,6 +35,9 @@ foreach ($usr->usuario as $user) {
         echo "<STRONG>Telefone: </STRONG>" . 
             strval($user->tel);
         echo "<P>";
+        echo "<STRONG>Data de Nascimento: </STRONG>" . 
+            strval($user->nasc);
+        echo "<P>";
         echo "<STRONG>Endereço: </STRONG>";
         echo "<div class=p-p>";
         echo "Logradouro: ". strval($user->endereco);

@@ -41,9 +41,10 @@ foreach ($bills->conta as $bill) {
         }
 
 
-        echo "<H2 class='bills'><STRONG>" . strval($bill->titulo) . 
-            "</STRONG></H2><br>";
-        echo "<p>";
+        echo "<p class='small'><H2 class='bills'><STRONG>" .
+            strval($bill->titulo) . "</STRONG></H2>";
+        echo "<div class=p-p>".strval($bill->tipo)."</div>";
+        echo "</p><br>";
         echo "<STRONG>Situação: </STRONG> " . 
             strval($bill->status);
         echo "<p>";
@@ -75,6 +76,7 @@ foreach ($bills->conta as $bill) {
             . strval($bill->id) . 
             "&details=" . strval($bill->detalhes) .
             "&title=" . strval($bill->titulo) .
+            "&type=" . strval($bill->tipo) .
             "&received=" . strval($bill->recebimento) .
             "&value=" . strval($bill->valor) .
             "&deadline=" . strval($bill->vencimento) .
