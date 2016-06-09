@@ -21,15 +21,22 @@ echo "<div class=div-body>";
 
 $bill_id=$_GET['id'];
 $bills = simplexml_load_file('bills.xml');
+$profiles = simplexml_load_file('../profiles/profiles.xml');
+$users = simplexml_load_file('../users/usuarios.xml');
 
 foreach ($bills->conta as $bill) {
     if(!strcmp(strval($bill->id),$bill_id)){
+    
+        $payers="";
+        foreach($bill->pagadores->perfil as $pag){
+            $payers.=strval($pag).", ";
+        }
 
         $paymethods="";
         if(strval($bill->formapag->dinheiro)==true) $paymethods="Dinheiro";
         if(strval($bill->formapag->cartao)==true){
             if($paymethods!="") $paymethods.=", ";
-            $paymethods.="Cartao";
+            $paymethods.="Cartão";
         }
         if(strval($bill->formapag->cheque)==true){
             if($paymethods!="") $paymethods.=", ";
@@ -40,16 +47,34 @@ foreach ($bills->conta as $bill) {
             $paymethods.="Boleto";
         }
 
-
-        echo "<H2 class='bills'><STRONG>" . strval($bill->titulo) . 
-            "</STRONG></H2><br>";
-        echo "<p>";
+        echo "<p class='small'><H2 class='bills'><STRONG>" .
+            strval($bill->titulo) . "</STRONG></H2>";
+        echo "<div class=p-p>".strval($bill->tipo)."</div>";
+        echo "</p><br>";
         echo "<STRONG>Situação: </STRONG> " . 
             strval($bill->status);
         echo "<p>";
-        echo "<STRONG>Valor: </STRONG>R$ " . 
-            strval($bill->valor);
-        echo "<p>";
+        echo "<STRONG>Valor: </STRONG>";
+        
+        $n=0;
+        foreach($users->usuario as $usr){
+            foreach ($bill->pagadores->perfil as $p){
+                if(strval($usr->perfil)==strval($p)){
+                    $n++;
+                    break;
+                }
+            }
+        }
+        if(!$n) $n=1;
+
+        echo("<div id='value' class='p-p'>");
+        echo "Individual: R$ " .
+            number_format((float)$bill->valor/$n,2,'.','') .
+            " (".$n." pessoas)";
+        echo "<P>\n";
+        echo "Total: R$ " . strval($bill->valor);
+        echo "<P></div>";
+
         echo "<STRONG>Vencimento: </STRONG>" . 
             strval($bill->vencimento);
         echo "<p>";
@@ -60,6 +85,8 @@ foreach ($bills->conta as $bill) {
             strval($bill->usuresp);
         echo "<p>";
         echo "<STRONG>Formas de Pagamento: </STRONG>".$paymethods;
+        echo "<p>";
+        echo "<STRONG>Dividida Entre: </STRONG>" . $payers;
         echo "<p>";
         echo "<STRONG>Local de Pagamento: </STRONG>" . 
             strval($bill->local);
@@ -75,6 +102,7 @@ foreach ($bills->conta as $bill) {
             . strval($bill->id) . 
             "&details=" . strval($bill->detalhes) .
             "&title=" . strval($bill->titulo) .
+            "&type=" . strval($bill->tipo) .
             "&received=" . strval($bill->recebimento) .
             "&value=" . strval($bill->valor) .
             "&deadline=" . strval($bill->vencimento) .

@@ -393,7 +393,7 @@ tr{
 td{
     font-family: Arial;
     font-size: 14px;
-    padding: 8px 8px 8px 18px;
+    padding: 8px 14px 8px 14px;
     border-bottom: 1px solid #BBBBBB;
 }
 
@@ -418,10 +418,9 @@ table{
 }
 
 th {
-    padding: 8px 0px 8px 18px;
+    padding: 8px 14px 8px 14px;
     text-align: left;
     color: white;
-    font-family: Arial;
     font-weight: lighter;
     font-size: 15px;
     border-radius: 20px 20px 0px 0px;
@@ -434,4 +433,7 @@ req {
     font-size: 16px;
 }
 
-
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: high; }

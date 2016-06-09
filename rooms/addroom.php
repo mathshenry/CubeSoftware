@@ -27,14 +27,12 @@ if($_POST["mode"]=="create"){
         $newroom->addChild('detalhes', $_POST['details']);
         $newroom->addChild('tamanho', $_POST['size']);
         $newroom->addChild('valor', $_POST['value']);
-        $newroom->addChild('moradores', $_POST['resid']);
     } else {
         $mode=$_POST['mode'];
         $redirect = "Location: updateroom.php?mode=".$mode.
             "&mes=used_number".
             "&details=".$_POST['details'].
             "&size=".$_POST['size'].
-            "&resid=".$_POST['resid'].
             "&value=".$_POST['value'];
 
         Header ($redirect); exit;
@@ -47,7 +45,6 @@ if($_POST["mode"]=="create"){
             $quarto->detalhes=$_POST['details'];
             $quarto->tamanho=$_POST['size'];
             $quarto->valor=$_POST['value'];
-            $quarto->moradores=$_POST['resid'];
             break;
         }
     }

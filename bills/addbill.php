@@ -9,6 +9,7 @@ if(!Allowed('bills', 'write')){
 }
 
 $bills = simplexml_load_file('bills.xml');
+$profiles = simplexml_load_file('../profiles/profiles.xml');
 if($_POST["mode"]=="create"){
     $ids=array();
     foreach ($bills->conta as $conta) {
@@ -26,6 +27,7 @@ if($_POST["mode"]=="create"){
     $newbill=$bills->addChild('conta');
     $newbill->addChild('id', $id);
     $newbill->addChild('titulo', $_POST['title']);
+    $newbill->addChild('tipo', $_POST['type']);
     $newbill->addChild('detalhes', $_POST['details']);
     $newbill->addChild('recebimento', $_POST['received']);
     $newbill->addChild('vencimento', $_POST['deadline']);
@@ -33,6 +35,14 @@ if($_POST["mode"]=="create"){
     $newbill->addChild('local', $_POST['location']);
     $newbill->addChild('usuresp', $_POST['respuser']);
     $newbill->addChild('status', $_POST['status']);
+    $newbill->addChild('pagadores');
+    foreach($profiles->perfil as $p){
+        if(isset($_POST[strval($p->nome)])){
+            $newbill->pagadores->addChild('perfil',
+                        strval($p->nome));
+        }
+    }
+
     $newbill->addChild('formapag');
     $newbill->formapag->addChild(
             'dinheiro', strval(isset($_POST['money'])));
@@ -48,6 +58,7 @@ if($_POST["mode"]=="create"){
         $id=$_POST['id'];
         if(!strcmp(strval($conta->id), $id)){
             $conta->titulo=$_POST['title'];
+            $conta->tipo=$_POST['type'];
             $conta->detalhes=$_POST['details'];
             $conta->recebimento=$_POST['received'];
             $conta->vencimento=$_POST['deadline'];
@@ -59,6 +70,16 @@ if($_POST["mode"]=="create"){
             $conta->formapag->cartao=isset($_POST['creditcard']);
             $conta->formapag->cheque=isset($_POST['check']);
             $conta->formapag->boleto=isset($_POST['billet']);
+            foreach($conta->pagadores->perfil as $payer){
+                unset($payer[0]);
+            }
+            foreach($profiles->perfil as $p){
+                if(isset($_POST[strval($p->nome)])){
+                    $conta->pagadores->addChild('perfil',
+                        strval($p->nome));
+                }
+            }
+
             break;
         }
     }

@@ -52,18 +52,20 @@ foreach ($profiles->perfil as $profile) {
             strval($profile->historicos));
         echo "<P></div>";
 
-        echo "<a href='deleteprofile.php?delete=" . 
-            $profile->nome . "' > Remover Perfil</a>\n";
-        echo "<a href='updateprofile.php?mode=update&name="
-            . strval($profile->nome) . 
-            "&details=" . strval($profile->detalhes) .
-            "&users=" . strval($profile->usuarios) .
-            "&profiles=" . strval($profile->perfis) .
-            "&bills=" . strval($profile->contas) .
-            "&rooms=" . strval($profile->quartos) .
-            "&stocks=" . strval($profile->estoques) .
-            "&history=" . strval($profile->historicos) .
-            "'> Editar Perfil</a>\n";
+        if($profilename!="Administrador"){
+            echo "<a href='deleteprofile.php?delete=" . 
+                $profile->nome . "' > Remover Perfil</a>\n";
+            echo "<a href='updateprofile.php?mode=update&name="
+                . strval($profile->nome) . 
+                "&details=" . strval($profile->detalhes) .
+                "&users=" . strval($profile->usuarios) .
+                "&profiles=" . strval($profile->perfis) .
+                "&bills=" . strval($profile->contas) .
+                "&rooms=" . strval($profile->quartos) .
+                "&stocks=" . strval($profile->estoques) .
+                "&history=" . strval($profile->historicos) .
+                "'> Editar Perfil</a>\n";
+        }
     }
 }
 ?>

@@ -16,9 +16,14 @@ if(!Allowed('profiles','update')){
     exit;
 }
 
+$profile = $_GET['name'];
+if ($_GET['mode']=='update' && $profile=="Administrador"){
+    Header("location: ../write_profiles_denied.php?mes=O perfil ".$profile." não pode ser alterado!");
+    exit;
+}
+
 ?>
 <div class="div-cad"> 
-
 <?php
 
 if($_GET['mode']=='update')

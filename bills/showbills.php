@@ -25,9 +25,11 @@ echo "<h1>Contas</h1><br><br>";
         <th>Vencimento</th>
         <th>Pessoa Responsável</th>
         <th>Situação</th>
+        <th>Remover</th>
 <?php
 $bills = simplexml_load_file('bills.xml');
 foreach ($bills->conta as $bill) {
+    if(FilterPass("bills", $bill)){
         echo "<tr onclick =\"location.href=
             'billdetails.php?id=". $bill->id . "'\"><td>";
         echo "<b>".strval($bill->titulo) . "</b></td>";
@@ -39,7 +41,10 @@ foreach ($bills->conta as $bill) {
         echo strval($bill->usuresp) . "</td>";
         echo "<td>";
         echo strval($bill->status) . "</td>";
+        echo "<td>";
+        echo "<a href='deletebill.php?delete=".$bill->id."'>Remover</td>";
         echo "</tr>";
+    }
 }
     echo "</table>";
 ?>

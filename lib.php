@@ -53,6 +53,7 @@ function Allowed($crud, $op){
                         $param1=(string)$perfil->perfis;
                         break;
                     case 'users':
+                        $username;
                         if(isset($_GET['detalhes'])) $username=$_GET['detalhes'];
                         elseif(isset($_GET['user'])) $username=$_GET['user'];
                         elseif(isset($_POST['user'])) $username=$_POST['user'];
@@ -95,4 +96,59 @@ function Allowed($crud, $op){
     }
     return false;
 }
+
+function load_names(){
+
+    $users=simplexml_load_file("../users/usuarios.xml");
+    foreach($users as $user){
+        $names[]=strval($user->nome);
+    }
+    $nameslist=json_encode($names);
+    ?>
+    <script> var names = <?php echo $nameslist; ?>; </script>
+    <?php
+}
+
+function UserHasActiveBill(){
+    $user=$_GET['user']; $name;
+    $users=simplexml_load_file("usuarios.xml");
+    foreach($users as $usr){
+        if ($usr->usuario==$user){
+            $name=$usr->nome;
+            break;
+        }
+    }
+
+
+    $bills=simplexml_load_file("../bills/bills.xml");
+    foreach($bills as $bill){
+        echo "<h1>".$bill->usuresp."</h1>";
+        echo "<h1>".$name."</h1>";
+        if (strval($bill->usuresp)==$name){
+            return true;
+        }
+    }
+    return false;
+}
+
+function FilterPass($crud,$entity){
+
+
+    switch($crud){
+        case "bills":
+            
+            if(isset($_GET['respuser'])){
+                if(strval($entity->usuresp)!=$_GET['respuser'])
+                    return false;
+            }
+            if(isset($_GET['status'])){
+                if(strval($entity->status)!=$_GET['status'])
+                    return false;
+            }
+            break;
+        default:
+        }
+   return true;
+}
+
 ?>
