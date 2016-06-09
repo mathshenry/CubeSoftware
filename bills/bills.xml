@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<contas><conta><id>0</id><titulo>asdeef</titulo><tipo>Outros</tipo><detalhes></detalhes><recebimento></recebimento><vencimento>12/33/1212</vencimento><valor>23132.22</valor><local></local><usuresp>Matheus Henrique</usuresp><status>Pendente</status><pagadores><perfil>Administrador</perfil><perfil>Morador</perfil></pagadores><formapag><dinheiro>1</dinheiro><cartao>1</cartao><cheque>1</cheque><boleto>1</boleto></formapag></conta></contas>
+<contas/>

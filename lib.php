@@ -119,12 +119,12 @@ function UserHasActiveBill(){
         }
     }
 
-
     $bills=simplexml_load_file("../bills/bills.xml");
     foreach($bills as $bill){
         echo "<h1>".$bill->usuresp."</h1>";
         echo "<h1>".$name."</h1>";
-        if (strval($bill->usuresp)==$name){
+        if (strval($bill->usuresp)==$name && 
+            strval($bill->status=="Pendente")){
             return true;
         }
     }
