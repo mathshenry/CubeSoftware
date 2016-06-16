@@ -40,6 +40,8 @@ $bills="";
 $rooms="";
 $stocks="";
 $history="";
+$complaints="";
+$tasks="";
 
 if (isset($_GET['name'])) $name=$_GET['name'];
 if (isset($_GET['details'])) $details=$_GET['details'];
@@ -49,9 +51,11 @@ if (isset($_GET['bills'])) $bills=$_GET['bills'];
 if (isset($_GET['rooms'])) $rooms=$_GET['rooms'];
 if (isset($_GET['stocks'])) $stocks=$_GET['stocks'];
 if (isset($_GET['history'])) $history=$_GET['history'];
+if (isset($_GET['tasks'])) $tasks=$_GET['tasks'];
+if (isset($_GET['complaints'])) $complaints=$_GET['complaints'];
 
 $selected_user = array(3);
-if($users=="-") $selected_bill[0]="selected";
+if($users=="-") $selected_user[0]="selected";
 else if($users=="Leitura") $selected_user[1]="selected";
 else if($users=="Escrita/Leitura") $selected_user[2]="selected";
 
@@ -80,6 +84,15 @@ if($history=="-") $selected_history[0]="selected";
 else if($history=="Leitura") $selected_history[1]="selected";
 else if($history=="Escrita/Leitura") $selected_history[2]="selected";
 
+$selected_tasks = array(3);
+if($tasks=="-") $selected_tasks[0]="selected";
+else if($tasks=="Leitura") $selected_tasks[1]="selected";
+else if($tasks=="Escrita/Leitura") $selected_tasks[2]="selected";
+
+$selected_complaints = array(3);
+if($complaints=="-") $selected_complaints[0]="selected";
+else if($complaints=="Leitura") $selected_complaints[1]="selected";
+else if($complaints=="Escrita/Leitura") $selected_complaints[2]="selected";
 
 $readonly="";
 
@@ -107,6 +120,13 @@ echo '<select name="users">';
 echo '<option '.$selected_user[0].' value="-"></option>';
 echo '<option '.$selected_user[1].' value="Leitura">Leitura</option>';
 echo '<option '.$selected_user[2].' value="Escrita/Leitura">Escrita/Leitura</option>';
+echo '</select>';
+
+echo '<strong>Tarefas:</strong>';
+echo '<select name="tasks">';
+echo '<option '.$selected_tasks[0].' value="-"></option>';
+echo '<option '.$selected_tasks[1].' value="Leitura">Leitura</option>';
+echo '<option '.$selected_tasks[2].' value="Escrita/Leitura">Escrita/Leitura</option>';
 echo '</select>';
 
 echo '<strong>Perfis:</strong>';
@@ -137,11 +157,18 @@ echo '<option '.$selected_stock[1].' value="Leitura">Leitura</option>';
 echo '<option '.$selected_stock[2].' value="Escrita/Leitura">Escrita/Leitura</option>';
 echo '</select>';
 
-echo '<strong>Histórico:</strong>';
+echo '<strong>Históricos:</strong>';
 echo '<select name="history">';
 echo '<option '.$selected_history[0].' value="-"></option>';
 echo '<option '.$selected_history[1].' value="Leitura">Leitura</option>';
 echo '<option '.$selected_history[2].' value="Escrita/Leitura">Escrita/Leitura</option>';
+echo '</select>';
+
+echo '<strong>Reclamações:</strong>';
+echo '<select name="complaints">';
+echo '<option '.$selected_complaints[0].' value="-"></option>';
+echo '<option '.$selected_complaints[1].' value="Leitura">Leitura</option>';
+echo '<option '.$selected_complaints[2].' value="Escrita/Leitura">Escrita/Leitura</option>';
 echo '</select>';
 
 echo '<hr>';

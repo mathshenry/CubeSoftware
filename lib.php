@@ -73,6 +73,9 @@ function Allowed($crud, $op){
                     case 'stocks':
                         $param1=(string)$perfil->estoques;
                         break;
+                    case 'complaints':
+                        $param1=(string)$perfil->reclam;
+                        break;
                     case 'historys':
                         $param1=(string)$perfil->historicos;
                         break;

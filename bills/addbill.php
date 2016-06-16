@@ -10,10 +10,11 @@ if(!Allowed('bills', 'write')){
 
 $bills = simplexml_load_file('bills.xml');
 $profiles = simplexml_load_file('../profiles/profiles.xml');
+
 if($_POST["mode"]=="create"){
     $ids=array();
     foreach ($bills->conta as $conta) {
-        array_push($ids, $conta->id);
+        array_push($ids, intval($conta->id));
     }
     sort($ids);
 
@@ -54,8 +55,8 @@ if($_POST["mode"]=="create"){
             'boleto', strval(isset($_POST['billet'])));
 
 } else {
+    $id=$_POST['id'];
     foreach ($bills->conta as $conta) {
-        $id=$_POST['id'];
         if(!strcmp(strval($conta->id), $id)){
             $conta->titulo=$_POST['title'];
             $conta->tipo=$_POST['type'];

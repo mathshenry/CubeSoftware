@@ -31,6 +31,8 @@ if($_POST["mode"]=="create"){
         $newprofile->addChild('quartos', $_POST['rooms']);
         $newprofile->addChild('estoques', $_POST['stocks']);
         $newprofile->addChild('historicos', $_POST['history']);
+        $newprofile->addChild('tarefas', $_POST['tasks']);
+        $newprofile->addChild('reclam', $_POST['complaints']);
 
     } else {
         $mode=$_POST['mode'];
@@ -42,6 +44,8 @@ if($_POST["mode"]=="create"){
             rooms=".$_POST['rooms']."&
             stocks=".$_POST['stocks']."&
             history=".$_POST['history']."&
+            tasks=".$_POST['tasks']."&
+            complaints=".$_POST['complaints']."&
             profiles=".$_POST['profiles'];
 
         Header ($redirect); Exit;
@@ -57,6 +61,8 @@ if($_POST["mode"]=="create"){
             $perfil->quartos=$_POST['rooms'];
             $perfil->estoques=$_POST['stocks'];
             $perfil->historicos=$_POST['history'];
+            $perfil->tarefas=$_POST['tasks'];
+            $perfil->reclam=$_POST['complaints'];
             break;
         }
     }

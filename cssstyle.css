@@ -46,15 +46,15 @@ a {
 }
 
 li a {
-    font-size: 14px;
+    font-size: 12px;
     float: left;
     color: white;
     text-align: center;
     display: block;
-    padding: 14px;
+    padding: 16px;
     text-decoration: none;
     width: 90px;
-    height: 18px;
+    height: 100%;
     text-shadow: -1px 1px 4px #444444;
 }
 li a.active {
@@ -69,6 +69,11 @@ li a:hover:not(.active) {
 
 li a.users:hover:not(.active) {
     background-color: orange;
+    color: white;
+}
+
+li a.statistics:hover:not(.active) {
+    background-color: LimeGreen;
     color: white;
 }
 
@@ -129,7 +134,9 @@ li a.users:hover:not(.active) {
 .stocks a:hover{
     background-color: brown;
 }
-
+.complaints a:hover{
+    background-color: LightSeaGreen;
+}
 
 .dd-user a:hover{
     background-color: orange;
@@ -143,12 +150,12 @@ li a.users:hover:not(.active) {
 .droplbl-menu{
     font-family: Arial;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 12px;
     display: inline;
     color: white;
     text-align: center;
     display: block;
-    padding: 14px;
+    padding: 16px;
     width: 90px;
     text-decoration: none;
     text-shadow: -1px 1px 4px #444444;
@@ -212,6 +219,12 @@ input[type=submit].stocks{
 input[type=submit].profiles{
     background-color: #2C308F;
 }
+input[type=submit].historys{
+    background-color: #2C308F;
+}
+input[type=submit].complaints{
+    background-color: LightSeagreen;
+}
 
 input[type=submit].users:hover{
     background-color: orange;
@@ -230,6 +243,9 @@ input[type=submit].stocks:hover{
 }
 input[type=submit].profiles:hover{
     background-color: #1C205F;
+}
+input[type=submit].complaints:hover{
+    background-color: #1b9891;
 }
 
 .login_err{
@@ -300,13 +316,7 @@ input[type=submit]:hover{
     font-variant: small-caps;
 }
 
-.div-p{
-    cursor: pointer;
-    border-radius: 6px;
-    border: 1px solid darkgrey;
-}
-
-.div-q{
+.div-p, .div-q, .div-c{
     cursor: pointer;
     border-radius: 6px;
     border: 1px solid darkgrey;
@@ -320,7 +330,11 @@ input[type=submit]:hover{
     color: purple;
 }
 
-.div-p:hover, .div-q:hover{
+.div-c h4 {
+    color: LightSeaGreen;
+}
+
+.div-p:hover, .div-q:hover, .div-c:hover{
     background-color: #BBBBBB;
     cursor: pointer;
 }
@@ -370,6 +384,10 @@ h2.stocks{
     color: yellow;
     text-align: left;
 }
+h2.complaints{
+    color: LightSeaGreen;
+    text-align: left;
+}
 
 h3{
     text-align: center;
@@ -406,6 +424,14 @@ tr:hover {
     background-color: darkorange;
 }
 
+#bills th{
+    background-color: #E20000;
+}
+
+#tasks th{
+    background-color: Green;
+}
+
 table{
     border-collapse: collapse;
     width: 100%;
@@ -413,9 +439,6 @@ table{
     border-radius: 20px 20px 0px 0px;
 }
 
-#bills th{
-    background-color: #E20000;
-}
 
 th {
     padding: 8px 14px 8px 14px;

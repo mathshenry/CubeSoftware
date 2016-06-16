@@ -39,6 +39,9 @@ foreach ($profiles->perfil as $profile) {
         echo ("Perfis: " . 
             strval($profile->perfis));
         echo("<P>\n");
+        echo ("Tarefas: " . 
+            strval($profile->tarefas));
+        echo("<P>\n");
         echo ("Contas: " . 
             strval($profile->contas));
         echo("<P>\n");
@@ -50,6 +53,9 @@ foreach ($profiles->perfil as $profile) {
         echo("<P>\n");
         echo ("Históricos: " . 
             strval($profile->historicos));
+        echo("<P>\n");
+        echo ("Reclamações: " . 
+            strval($profile->reclam));
         echo "<P></div>";
 
         if($profilename!="Administrador"){
@@ -64,6 +70,8 @@ foreach ($profiles->perfil as $profile) {
                 "&rooms=" . strval($profile->quartos) .
                 "&stocks=" . strval($profile->estoques) .
                 "&history=" . strval($profile->historicos) .
+                "&tasks=" . strval($profile->tarefas) .
+                "&complaints=" . strval($profile->reclam) .
                 "'> Editar Perfil</a>\n";
         }
     }
