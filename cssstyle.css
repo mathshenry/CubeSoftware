@@ -456,6 +456,28 @@ req {
     font-size: 16px;
 }
 
+.start, .end{
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding: 5px;
+}
+
+.tipo{
+    box-sizing: border-box;
+    width: 170px;
+    padding: 5px 0px 5px 10px;
+    float: left;
+}
+
+.submit{
+    box-sizing: border-box;
+    width: 50px;
+    padding: 18px 0px 5px 10px;
+    float: left;
+
+}
+
 .autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
 .autocomplete-suggestion { padding: 10px 5px; white-space: nowrap; overflow: hidden; }
 .autocomplete-selected { background: #f0f0f0; }

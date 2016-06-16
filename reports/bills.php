@@ -50,15 +50,22 @@ foreach($despesas as $data=>$despesa){
 <h1>Despesas</h1><br>
 
 <form name='newbill' action='bills.php' method='GET' enctype='multipart/form-data'>
-Inicio:           Fim:<br>
+<div class="start">
+Inicio:<br>
 <input type="date" style="width:170px;" name="start">
-<input type="date" style="width:170px;" name="end">
+</div>
 
+<div class="end">
+Fim:
+<input type="date" style="width:170px;" name="end">
+</div>
+
+<div class="tipo">
 <?php
 
 $billtypes=array("Todos","Aluguel","Luz","Água","Telefone/Internet","Alimentação","Serviços");
 
-echo '<p class="small">Tipo de despesa: <br>';
+echo 'Tipo de despesa: <br>';
 echo '<select style="width:128px;" required name="tipo">';
 foreach($billtypes as $tipo){
     $selected="";
@@ -70,7 +77,10 @@ foreach($billtypes as $tipo){
 }
 ?>
 </select>
+</div>
+<div class="submit">
 <input class="bills" type="submit" name="Submit" style="width:60px;" value="Ok">
+</div>
 <div>
 <canvas id="myChart" id="chart" width="800" height="400"></canvas>
 </div>
