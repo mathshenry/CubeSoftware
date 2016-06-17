@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<quartos/>
+<quartos><quarto><numero>12</numero><detalhes>Quarto da frente</detalhes><tamanho>24</tamanho><valor>120.22</valor></quarto><quarto><numero>01</numero><detalhes>Su&#xED;te principal</detalhes><tamanho>20</tamanho><valor>230.00</valor></quarto><quarto><numero>02</numero><detalhes/><tamanho>320.50</tamanho><valor>210.05</valor></quarto></quartos>

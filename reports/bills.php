@@ -82,7 +82,7 @@ Fim:
 <div class="tipo">
 <?php
 
-$billtypes=array("Todos","Aluguel","Luz","Água","Telefone/Internet","Alimentação","Serviços");
+$billtypes=array("Todos","Aluguel","Luz","Água","Telefone/Internet","Alimentação","Serviços","Outros");
 
 echo 'Tipo de despesa: <br>';
 echo '<select required name="tipo">';

@@ -134,9 +134,9 @@ echo '<p>Valor (R$): <req>*</req> ';
 echo '<input type="number" step="0.01" id="value" required name="value" value="' . $value . '"><br>';
 
 echo '<p>Data de Vencimento: <req>*</req> ';
-echo '<input type="text" required class="calendario" name="deadline" value="' . $deadline . '"><br>';
+echo '<input type="text" required class="calendario" id="deadline" name="deadline" value="' . $deadline . '"><br>';
 echo '<p>Data de Recebimento: ';
-echo '<input type="text" class="calendario" name="received" value="' . $received . '">';
+echo '<input type="text" class="calendario" id="received" name="received" value="' . $received . '">';
 
 echo '<p>Forma de Pagamento: ';
 foreach($paymethods as $pm=>$pmname){
