@@ -20,7 +20,7 @@ echo "<div class=div-body>";
 echo "<h1>Contas</h1><br><br>";
 ?>
         <table id='bills'>
-        <th>Título</th>
+        <th>Tipo</th>
         <th>Valor</th>
         <th>Vencimento</th>
         <th>Pessoa Responsável</th>
@@ -32,7 +32,7 @@ foreach ($bills->conta as $bill) {
     if(FilterPass("bills", $bill)){
         echo "<tr onclick =\"location.href=
             'billdetails.php?id=". $bill->id . "'\"><td>";
-        echo "<b>".strval($bill->titulo) . "</b></td>";
+        echo "<b>".strval($bill->tipo) . "</b></td>";
         echo "<td>";
         echo "R$ " . strval($bill->valor) . "</td>";
         echo "<td>";

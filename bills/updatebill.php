@@ -16,18 +16,13 @@ load_names();
 <head>
 <link rel='stylesheet' href='../cssstyle.css'>
 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="../js/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
 <script src="../js/jquery.maskedinput.js"></script>
 <script src="../js/jquery.autocomplete.min.js"></script>
 <script src="../js/nameslist-autocomplete.js"></script>
 
-<script>
-$(function(){
-    $("#deadline").mask("99/99/9999",{placeholder:""});
-    $("#recv").mask("99/99/9999",{placeholder:""});
-});
-
-</script>
 <script>
 function validateForm() {
     var nome = document.forms['newbill']['respuser'].value;
@@ -42,7 +37,13 @@ function validateForm() {
 }
 </script>
 
-</head>
+<script>
+$(function() {
+    $(".calendario").datepicker({dateFormat: 'dd/mm/yy'});
+    $(".calendario").mask("99/99/9999",{placeholder:""});
+});
+
+</script></head>
 <body>
 
 <div class="div-cad"> 
@@ -133,9 +134,9 @@ echo '<p>Valor (R$): <req>*</req> ';
 echo '<input type="number" step="0.01" id="value" required name="value" value="' . $value . '"><br>';
 
 echo '<p>Data de Vencimento: <req>*</req> ';
-echo '<input type="text" required id="deadline" name="deadline" value="' . $deadline . '"><br>';
+echo '<input type="text" required class="calendario" name="deadline" value="' . $deadline . '"><br>';
 echo '<p>Data de Recebimento: ';
-echo '<input type="text" id="recv" name="received" value="' . $received . '">';
+echo '<input type="text" class="calendario" name="received" value="' . $received . '">';
 
 echo '<p>Forma de Pagamento: ';
 foreach($paymethods as $pm=>$pmname){

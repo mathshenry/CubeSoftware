@@ -72,7 +72,7 @@ li a.users:hover:not(.active) {
     color: white;
 }
 
-li a.statistics:hover:not(.active) {
+li a.reports:hover:not(.active) {
     background-color: LimeGreen;
     color: white;
 }
@@ -135,6 +135,9 @@ li a.statistics:hover:not(.active) {
     background-color: brown;
 }
 .complaints a:hover{
+    background-color: LightSeaGreen;
+}
+.reports a:hover{
     background-color: LightSeaGreen;
 }
 
@@ -225,6 +228,9 @@ input[type=submit].historys{
 input[type=submit].complaints{
     background-color: LightSeagreen;
 }
+input[type=submit].reports{
+    background-color: LimeGreen;
+}
 
 input[type=submit].users:hover{
     background-color: orange;
@@ -246,6 +252,9 @@ input[type=submit].profiles:hover{
 }
 input[type=submit].complaints:hover{
     background-color: #1b9891;
+}
+input[type=submit].reports:hover{
+    background-color: #28a428;
 }
 
 .login_err{
@@ -403,7 +412,6 @@ h4{
     font-size: 18px;
 }
 
-
 tr{
     background-color: #DDDDDD;
 }
@@ -422,14 +430,35 @@ tr:hover {
 }
 #users th{
     background-color: darkorange;
+    border-radius: 20px 20px 0px 0px;
+    padding: 8px 14px 8px 14px;
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    box-shadow: -1px -1px 4px #BBBBBB;
 }
 
 #bills th{
     background-color: #E20000;
+    border-radius: 20px 20px 0px 0px;
+    padding: 8px 14px 8px 14px;
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    box-shadow: -1px -1px 4px #BBBBBB;
 }
 
 #tasks th{
     background-color: Green;
+    border-radius: 20px 20px 0px 0px;
+    padding: 8px 14px 8px 14px;
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    box-shadow: -1px -1px 4px #BBBBBB;
 }
 
 table{
@@ -437,17 +466,6 @@ table{
     width: 100%;
     box-shadow: -1px 4px 5px #BFBFBF;
     border-radius: 20px 20px 0px 0px;
-}
-
-
-th {
-    padding: 8px 14px 8px 14px;
-    text-align: left;
-    color: white;
-    font-weight: lighter;
-    font-size: 15px;
-    border-radius: 20px 20px 0px 0px;
-    box-shadow: -1px -1px 4px #BBBBBB;
 }
 
 req {
@@ -458,21 +476,22 @@ req {
 
 .start, .end{
     box-sizing: border-box;
-    width: 25%;
+    width: 30%;
     float: left;
     padding: 5px;
 }
 
 .tipo{
     box-sizing: border-box;
-    width: 170px;
+    width: 25%;
+    min-width: 120px;
     padding: 5px 0px 5px 10px;
     float: left;
 }
 
 .submit{
     box-sizing: border-box;
-    width: 50px;
+    width: 10%;
     padding: 18px 0px 5px 10px;
     float: left;
 

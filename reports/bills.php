@@ -2,10 +2,23 @@
 <html>
 
 <head>
-    <link rel='stylesheet' href='../cssstyle.css'>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"
-    ></script>
+<link rel='stylesheet' href='../cssstyle.css'>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<script src="../js/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+<script src="../js/jquery.maskedinput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"</script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script>
+$(function() {
+    $(".calendario").datepicker({dateFormat: 'dd/mm/yy'});
+    $(".calendario").mask("99/99/9999",{placeholder:""});
+});
+</script>
+
 </head>
 
 <body>
@@ -21,27 +34,33 @@ if(!Allowed('reports', 'read')){
 }
 */
 
+$start="";
+$end="";
 $title="Despesas totais";
-if (isset($_GET['tipo']))
+if (isset($_GET['tipo'])){
+    $type=$_GET['tipo'];
     if(strcmp($_GET['tipo'],"Todos"))
         $title="Despesas com ".$_GET['tipo'];
+}
+if (isset($_GET['start'])) $start=$_GET['start'];
+if (isset($_GET['end'])) $end=$_GET['end'];
 
 $bills = simplexml_load_file('../bills/bills.xml');
 
 $despesas=array();
 foreach($bills->conta as $bill){
     if(FilterPass("bills", $bill)){
-        $data=substr(strval($bill->vencimento),6).
-            substr(strval($bill->vencimento),3,2);
+        $data=substr(date_to_val($bill->vencimento),0,6);
         if(!isset($despesas[$data])) $despesas[$data]=0.0;
         $despesas[$data]+=floatval($bill->valor);
     }
 }
 ksort($despesas);
-//$datas=array_keys($despesas);
+fill_gaps($despesas);
+
 $datas=array();
 foreach($despesas as $data=>$despesa){
-    array_push($datas,get_month(substr(strval($data),-2)).'/'.substr(strval($data),0,4));
+    array_push($datas,get_month(substr(strval($data),4,2)).'/'.substr(strval($data),0,4));
 }
 
 ?>
@@ -52,12 +71,12 @@ foreach($despesas as $data=>$despesa){
 <form name='newbill' action='bills.php' method='GET' enctype='multipart/form-data'>
 <div class="start">
 Inicio:<br>
-<input type="date" style="width:170px;" name="start">
+<input type="text" class="calendario" name="start" placeholder="Nenhum" value="<?php echo $start;?> ">
 </div>
 
 <div class="end">
 Fim:
-<input type="date" style="width:170px;" name="end">
+<input type="text" class="calendario" name="end" placeholder="Nenhum" value="<?php echo $end;?>">
 </div>
 
 <div class="tipo">
@@ -66,7 +85,7 @@ Fim:
 $billtypes=array("Todos","Aluguel","Luz","Água","Telefone/Internet","Alimentação","Serviços");
 
 echo 'Tipo de despesa: <br>';
-echo '<select style="width:128px;" required name="tipo">';
+echo '<select required name="tipo">';
 foreach($billtypes as $tipo){
     $selected="";
     if($type==$tipo){
@@ -79,7 +98,7 @@ foreach($billtypes as $tipo){
 </select>
 </div>
 <div class="submit">
-<input class="bills" type="submit" name="Submit" style="width:60px;" value="Ok">
+<input class="reports" type="submit" name="Submit" style="width:60px;" value="Ok">
 </div>
 <div>
 <canvas id="myChart" id="chart" width="800" height="400"></canvas>
@@ -89,8 +108,6 @@ foreach($billtypes as $tipo){
 
 <script>
 
-//essa seção script pode ir em qqr lugar, nao importa a ordem,
-//o grafico ira aparecer onde vc escreveu <canvas ...></canvas>
 var ctx = document.getElementById("myChart");
 var dados = <?php echo json_encode(array_values($despesas)); ?>;
 var rotulos = <?php echo json_encode(array_values($datas)); ?>;
@@ -100,19 +117,23 @@ labels: rotulos,
 datasets: [
 {
 label: title,
-backgroundColor: "#E20000",
-borderColor: "#E20000",
+backgroundColor: "#2f4f4f",
+borderColor: "#2f4f4f",
 borderWidth: 1,
-hoverBackgroundColor: "#E22222",
-hoverBorderColor: "#E22222",
+hoverBackgroundColor: "#4d8080",
+hoverBorderColor: "#4d8080",
 data: dados,
 }
 ]
 };
-var myPieChart = new Chart(ctx,{
+var myBarChart = new Chart(ctx,{
     type: 'bar',
     data: data,
-    options: {}
+    options: {
+        scaleLabel: function (cost){
+            return '$ ' + Number(cost.value);
+        }
+    }
 });
 
 </script>

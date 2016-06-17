@@ -1,6 +1,6 @@
 <?php
 function get_month($mn){
-    $month;
+    $month="";
     switch($mn){
         case '1':
             $month= "Janeiro";
@@ -179,25 +179,76 @@ function UserHasActiveBill(){
 }
 
 function FilterPass($crud,$entity){
-
+    $S=true;
     switch($crud){
         case "bills":
             if(isset($_GET['respuser'])){
                 if(strval($entity->usuresp)!=$_GET['respuser'])
-                    return false;
+                    $S=false;
             }
             if(isset($_GET['status'])){
                 if(strval($entity->status)!=$_GET['status'])
-                    return false;
+                    $S=false;
             }
             if(isset($_GET['tipo'])){
-                if(strval($entity->tipo)!=$_GET['tipo'])
-                    return false;
+                if(strcmp($_GET['tipo'],"Todos"))
+                    if(strval($entity->tipo)!=$_GET['tipo'])
+                        $S=false;
+            }
+            if(isset($_GET['start'])){
+                $start=date_to_val($_GET['start']);
+                $data=date_to_val($entity->vencimento);
+                if($data<$start)
+                    $S=false;
+            }
+            if(isset($_GET['end'])){
+                if(strcmp($_GET['end'],"")){
+                    $end=date_to_val($_GET['end']);
+                    $data=date_to_val($entity->vencimento);
+                    if($data>$end)
+                        $S=false;
+                }
             }
             break;
         default:
         }
-   return true;
+   return $S;
+}
+
+function date_to_val($date){
+        return intval(substr(strval($date),6).
+            substr(strval($date),3,2).
+            substr(strval($date),0,2));
+}
+
+function fill_gaps(&$data){
+
+    $atp=array();
+    $previous=0;
+    foreach($data as $d=>$v){
+        if($previous==0){
+            $previous=intval($d);
+            echo "yes! ";
+            continue;
+        }
+        $prev_year=floor($previous/100);
+        $gap=12*(floor(intval($d)/100)-$prev_year)
+            +intval($d)%100-$previous%100;
+        if($gap>1){
+            $em=$previous+1;
+            if($em%100>=13)
+                $em+=100-12;
+            while($em<intval($d)){
+                $atp[$em]=0.0;
+                $em++;
+                if($em%100>=13)
+                    $em+=88;
+            }
+        }
+        $previous=intval($d);
+    }
+    $data=$data+$atp;
+    ksort($data);
 }
 
 ?>

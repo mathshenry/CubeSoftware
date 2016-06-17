@@ -39,7 +39,7 @@ if(isset($_SESSION['login_user'])) {
         </div>
     </div>
     <div class='dropdown menubar'>
-    <label class='droplbl-menu'>ESTOQUES</label>
+    <label class='droplbl-menu' style="display: none;">ESTOQUES</label>
         <div class='dropdown-content stocks dd-menu'>
             <a
             href="/CSS/stocks/showstocks.php">Visualizar
@@ -60,6 +60,20 @@ if(isset($_SESSION['login_user'])) {
             </a>
         </div>
     </div>
+    <div class='dropdown menubar'>
+    <label class='droplbl-menu'>RECLAMAÇÕES</label>
+        <div class='dropdown-content dd-menu complaints'>
+            <a
+            href="/CSS/complaints/showcomplaints.php">Ver Reclamações
+            </a>
+            <a
+            href="/CSS/complaints/updatecomplaint.php?mode=create">Fazer Reclamação
+            </a>
+        </div>
+    </div>
+    <li><a class='reports'
+    href="/CSS/reports/bills.php">ESTATÍSTICAS
+    </a></li>
 <?php
     echo "<div class='dropdown user'>";
     echo "<right><label class='droplbl-user'>".
