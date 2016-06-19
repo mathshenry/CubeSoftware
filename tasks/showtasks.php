@@ -45,5 +45,6 @@ foreach ($tasks->tarefa as $task) {
 }
     echo "</table>";
 ?>
+</div>
 </body>
 </html>

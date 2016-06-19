@@ -12,6 +12,7 @@ body{
 }
 
 menu {
+    border-radius: 0 0 16px 16px;
     list-style-type: none;
     margin: 0;
     border: 0;
@@ -43,6 +44,7 @@ menu {
 
 a {
     font-variant: small-caps;
+    transition: background .2s;
 }
 
 li a {
@@ -51,9 +53,10 @@ li a {
     color: white;
     text-align: center;
     display: block;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-decoration: none;
-    width: 90px;
+    width: 95px;
     height: 100%;
     text-shadow: -1px 1px 4px #444444;
 }
@@ -99,8 +102,10 @@ li a.reports:hover:not(.active) {
 .dropdown-content a {
     background-color: #444444;
     color: white;
-    padding: 14px 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     text-decoration: none;
+    text-align: center;
     display: block;
 }
 
@@ -110,9 +115,11 @@ li a.reports:hover:not(.active) {
 }
 
 .dropdown:hover .droplbl-user{
+    border-radius: 0 16px 0 0;
     background-color: #444444;
     font-weight: bold;
     color: orange;
+    display: block;
 }
 
 .dropdown-content a:hover{
@@ -146,6 +153,7 @@ li a.reports:hover:not(.active) {
 }
 
 .dropdown:hover .dropdown-content{
+    border-radius: 0 16px 16px 16px;
     background-color: #444444;
     display: block;
 }
@@ -158,10 +166,12 @@ li a.reports:hover:not(.active) {
     color: white;
     text-align: center;
     display: block;
-    padding: 16px;
-    width: 90px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100px;
     text-decoration: none;
     text-shadow: -1px 1px 4px #444444;
+    transition: all .2s;
 }
 
 .droplbl-menu:hover{
@@ -175,10 +185,11 @@ li a.reports:hover:not(.active) {
     color: white;
     background-color: orange;
     text-align: center;
-    padding: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin: 0;
     border: none;
-    width: 90px;
+    width: 110px;
     height: 18px;
 }
 
@@ -390,7 +401,7 @@ h2.rooms{
     text-align: left;
 }
 h2.stocks{
-    color: yellow;
+    color: brown;
     text-align: left;
 }
 h2.complaints{
@@ -411,6 +422,16 @@ h4{
     font-weight: lighter;
     font-size: 18px;
 }
+
+h5{
+    padding: 0px 8px 0px 8px;
+    margin: 0px 8px 2px 8px;
+    color: #444444;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
 
 tr{
     background-color: #DDDDDD;
@@ -461,6 +482,33 @@ tr:hover {
     box-shadow: -1px -1px 4px #BBBBBB;
 }
 
+#stocks th{
+    background-color: Brown;
+    border-radius: 20px 20px 0px 0px;
+    padding: 8px 14px 8px 14px;
+    text-align: left;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    box-shadow: -1px -1px 4px #BBBBBB;
+    cursor: default;
+}
+
+#stocks tr:hover {
+    background-color: inherit;
+    color: inherit;
+    cursor: default;
+}
+
+#collapse {
+    float: right;
+    width: 10px;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
 table{
     border-collapse: collapse;
     width: 100%;
@@ -496,6 +544,77 @@ req {
     float: left;
 
 }
+
+
+
+@media screen and (max-width: 991px){ 
+    #reports{
+        display:none;
+    }
+}
+@media screen and (max-width: 881px){ 
+    #complaints{
+        display:none;
+    }
+}
+@media screen and (max-width: 761px){ 
+    #profiles{
+        display:none;
+    }
+}
+@media screen and (max-width: 661px){ 
+    #menustocks{
+        display:none;
+    }
+}
+@media screen and (max-width: 561px){ 
+    #rooms{
+        display:none;
+    }
+}
+.col10, .col80, .col90, .col20, .col100{
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+}
+.col10{
+    width: 10%;
+}
+.col20{
+    width: 20%;
+}
+
+.col80{
+    width: 80%;
+}
+.col90{
+    width: 85%;
+}
+.col100{
+    width: 100%;
+}
+.itens{
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+    min-width: 300px;
+    width: 60%;
+}
+
+.missing{
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    width: 35%;
+    min-width: 165px;
+    padding: 10px;
+    float: left;
+}
+
+
 
 .autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
 .autocomplete-suggestion { padding: 10px 5px; white-space: nowrap; overflow: hidden; }
