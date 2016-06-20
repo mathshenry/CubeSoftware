@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="482.74716"
+   height="497.39438"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="logo-sprite.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective5167" />
+    <filter
+       inkscape:collect="always"
+       id="filter16781"
+       x="-6.2462039"
+       width="13.492408"
+       y="-1.0943882"
+       height="3.1887765"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16783" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16785"
+       x="-6.2462764"
+       width="13.492553"
+       y="-1.0971177"
+       height="3.1942356"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16787" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16789"
+       x="-6.7649794"
+       width="14.529958"
+       y="-1.0889754"
+       height="3.1779506"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16791" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16793"
+       x="-1.0616435"
+       width="3.123287"
+       y="-6.2624598"
+       height="13.524919"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16795" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16797"
+       x="-5.7510037"
+       width="12.502007"
+       y="-1.1317587"
+       height="3.2635176"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16799" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16801"
+       x="-1.3184125"
+       width="3.6368251"
+       y="-1.3184125"
+       height="3.6368251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16803" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16805"
+       x="-6.6119914"
+       width="14.223983"
+       y="-1.100005"
+       height="3.2000101"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16807" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16809"
+       x="-5.7803674"
+       width="12.560735"
+       y="-1.2875712"
+       height="3.5751424"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16811" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16813"
+       x="-1.0891234"
+       width="3.1782467"
+       y="-6.2624598"
+       height="13.524919"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16815" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16817"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16819" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16821"
+       x="-6.3456674"
+       width="13.691334"
+       y="-1.1114694"
+       height="3.2229388"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16823" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16825"
+       x="-1.1114693"
+       width="3.2229385"
+       y="-6.3456726"
+       height="13.691345"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16827" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16829"
+       x="-1.2956814"
+       width="3.5913627"
+       y="-1.3184125"
+       height="3.6368251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16831" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16833"
+       x="-6.280684"
+       width="13.561368"
+       y="-1.0599469"
+       height="3.1198938"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16835" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16837"
+       x="-1.2956814"
+       width="3.5913627"
+       y="-1.3419555"
+       height="3.6839113"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16839" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16841"
+       x="-5.9969449"
+       width="12.99389"
+       y="-1.1283464"
+       height="3.2566926"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16843" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16845"
+       x="-1.0911314"
+       width="3.1822629"
+       y="-6.1537938"
+       height="13.307588"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16847" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16849"
+       x="-0.91885877"
+       width="2.8377175"
+       y="-0.91885877"
+       height="2.8377175"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16851" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16853"
+       x="-0.91885877"
+       width="2.8377175"
+       y="-0.91885877"
+       height="2.8377175"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16855" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16857"
+       x="-0.91885877"
+       width="2.8377175"
+       y="-0.91885877"
+       height="2.8377175"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16859" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16861"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16863" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16865"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16867" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16869"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16871" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16873"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16875" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16877"
+       x="-1.2994626"
+       width="3.5989251"
+       y="-1.2994626"
+       height="3.5989251"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16879" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16881"
+       x="-1.0911316"
+       width="3.1822631"
+       y="-6.1537886"
+       height="13.307578"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16883" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16885"
+       x="-1.0911314"
+       width="3.1822629"
+       y="-6.1537991"
+       height="13.307598"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16887" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16889"
+       x="-1.0911316"
+       width="3.1822631"
+       y="-6.1537886"
+       height="13.307578"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16891" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16893"
+       x="-1.0911314"
+       width="3.1822629"
+       y="-6.1537991"
+       height="13.307598"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16895" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter16897"
+       x="-1.0911316"
+       width="3.1822631"
+       y="-6.1537991"
+       height="13.307598"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="31.312298"
+         id="feGaussianBlur16899" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="345.95348"
+     inkscape:cy="216.63459"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1231"
+     inkscape:window-height="776"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-bbox="false"
+     inkscape:snap-bbox-edge-midpoints="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-128.77504,-253.96177)">
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path15862"
+       d="m 403,641.59127 0,-28.93898 5.75,-5.39505 5.75,-5.39506 0.26561,28.91893 0.26562,28.91893 L 403,670.53024 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16781)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path15864"
+       d="m 420,624.55564 0,-28.99277 5.75,-5.25584 5.75,-5.25583 0.26555,28.78429 0.26554,28.7843 L 420,653.54842 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16785)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccscc"
+       inkscape:connector-curvature="0"
+       id="path15866"
+       d="m 437.05827,578.86218 11.10861,-10.27966 0,58.27966 -4.5048,4.32693 c -2.38146,2.28743 -6.60381,6.40279 -6.60381,6.40279 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16789)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15868"
+       d="m 340.05605,607.61175 c 1.32257,-1.5125 3.73928,-4.2125 5.37048,-6 l 2.9658,-3.25 30.02253,0 30.02253,0 -5.93739,6 -5.93739,6 -29.45562,0 -29.45562,0 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16793)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15870"
+       d="m 336.2243,552.63392 13.0672,-14.23646 0,52.8842 -13.0672,13.51645 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16797)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15872"
+       d="m 354,564.86218 0,-28.5 28.5,0 28.5,0 0,28.5 0,28.5 -28.5,0 -28.5,0 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16801)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path15874"
+       d="m 420,558.15774 0,-27.73617 11.36564,-11.05939 0,57.5 L 420,587.67961 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16805)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path15876"
+       d="m 436.56743,515.84643 2.82343,-2.59486 9.60914,9.548 -0.007,17.53131 -0.007,18.42416 -12.98682,12.86186 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16809)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15878"
+       d="m 273,545.57802 c 0,-0.43129 2.37665,-3.13129 5.28145,-6 l 5.28144,-5.21584 29.21856,0 29.21855,0 0,0.78416 c 0,0.43129 -2.37665,3.13129 -5.28145,6 l -5.28144,5.21584 -29.21856,0 -29.21855,0 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16813)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15880"
+       d="m 203.92455,544.38173 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16817);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path15882"
+       d="m 282.42411,471.32759 c -4.10261,3.8948 -8.01122,7.96468 -11.84265,12.12121 l 0,27.74578 0,27.74577 11.84265,-11.65743 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16821)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path15884"
+       d="m 356.83409,528.20482 c 3.89481,-4.10261 7.96465,-8.01125 12.12122,-11.84264 l 27.74578,0 27.74577,0 -11.65743,11.84264 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16825)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15886"
+       d="m 287,498.86218 0,-28.5 29,0 29,0 0,28.5 0,28.5 -29,0 -29,0 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16829)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:connector-curvature="0"
+       id="path15888"
+       d="m 353.03483,495.32802 2e-5,-29.53416 11.92926,-11.831 0.0359,58.3461 -5.96517,6.27661 -5.99999,6.27661 10e-6,-29.53416 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16833)" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       id="path15890"
+       d="m 374,482.36218 0,-28 29,0 29,0 0,28 0,28 -29,0 -29,0 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16837)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path15892"
+       d="m 437.13375,450.86218 12.08054,-13.10146 -0.18078,53.8627 -12.35052,12.73876 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16841)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16845)"
+       d="m 206.32136,479.21243 12.34716,-12.2119 28.26293,0 28.26293,0 -11.87471,12.2119 z"
+       id="path15894"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15896"
+       d="m 454.58697,403.84424 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16849);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15898"
+       d="m 371.24939,370.00413 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16853);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15900"
+       d="m 443.60157,508.01623 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16857);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16861);enable-background:accumulate"
+       d="m 203.92455,611.05181 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="path15902"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15904"
+       d="m 203.92455,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16865);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16869);enable-background:accumulate"
+       d="m 270.59462,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="path15906"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15908"
+       d="m 270.59462,611.05181 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16873);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:connector-curvature="0"
+       id="path15910"
+       d="m 337.26469,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.77290841;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter16877);enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16881)"
+       d="m 223.16446,463.04784 12.34715,-12.21191 8.49634,0 19.76659,0 28.26293,0 -11.87471,12.21191 z"
+       id="path15912"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path15914"
+       d="m 239.44851,446.94215 12.34715,-12.21189 28.26294,0 28.26293,0 -11.87472,12.21189 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16885)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path15916"
+       d="m 291.55881,463.04784 12.34714,-12.21191 8.49634,0 19.7666,0 28.26293,0 -11.87471,12.21191 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16889)" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16893)"
+       d="m 307.84286,446.94215 12.34715,-12.21189 28.26294,0 28.26293,0 -11.87472,12.21189 z"
+       id="path15918"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       inkscape:export-ydpi="18"
+       inkscape:export-xdpi="18"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path15920"
+       d="m 376.60101,446.94215 12.34714,-12.21189 28.26295,0 28.26292,0 -11.87471,12.21189 z"
+       style="opacity:0.77290841;fill:#ffffff;fill-opacity:1;filter:url(#filter16897)" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 403,641.59127 0,-28.93898 5.75,-5.39505 5.75,-5.39506 0.26561,28.91893 0.26562,28.91893 L 403,670.53024 z"
+       id="path5072"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 420,624.55564 0,-28.99277 5.75,-5.25584 5.75,-5.25583 0.26555,28.78429 0.26554,28.7843 L 420,653.54842 z"
+       id="path5070"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 437.05827,578.86218 11.10861,-10.27966 0,58.27966 -4.5048,4.32693 c -2.38146,2.28743 -6.60381,6.40279 -6.60381,6.40279 z"
+       id="path5068"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 340.05605,607.61175 c 1.32257,-1.5125 3.73928,-4.2125 5.37048,-6 l 2.9658,-3.25 30.02253,0 30.02253,0 -5.93739,6 -5.93739,6 -29.45562,0 -29.45562,0 z"
+       id="path5062"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 336.2243,552.63392 13.0672,-14.23646 0,52.8842 -13.0672,13.51645 z"
+       id="path5060"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 354,564.86218 0,-28.5 28.5,0 28.5,0 0,28.5 0,28.5 -28.5,0 -28.5,0 z"
+       id="path5058"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 420,558.15774 0,-27.73617 11.36564,-11.05939 0,57.5 L 420,587.67961 z"
+       id="path5056"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 436.56743,515.84643 2.82343,-2.59486 9.60914,9.548 -0.007,17.53131 -0.007,18.42416 -12.98682,12.86186 z"
+       id="path5054"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 273,545.57802 c 0,-0.43129 2.37665,-3.13129 5.28145,-6 l 5.28144,-5.21584 29.21856,0 29.21855,0 0,0.78416 c 0,0.43129 -2.37665,3.13129 -5.28145,6 l -5.28144,5.21584 -29.21856,0 -29.21855,0 z"
+       id="path5052"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 203.92455,544.38173 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="rect4226-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 282.42411,471.32759 c -4.10261,3.8948 -8.01122,7.96468 -11.84265,12.12121 l 0,27.74578 0,27.74577 11.84265,-11.65743 z"
+       id="path5165"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 356.83409,528.20482 c 3.89481,-4.10261 7.96465,-8.01125 12.12122,-11.84264 l 27.74578,0 27.74577,0 -11.65743,11.84264 z"
+       id="path5046"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 287,498.86218 0,-28.5 29,0 29,0 0,28.5 0,28.5 -29,0 -29,0 z"
+       id="path5044"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 353.03483,495.32802 2e-5,-29.53416 11.92926,-11.831 0.0359,58.3461 -5.96517,6.27661 -5.99999,6.27661 10e-6,-29.53416 z"
+       id="path5042"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 374,482.36218 0,-28 29,0 29,0 0,28 0,28 -29,0 -29,0 z"
+       id="path5040"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 437.13375,450.86218 12.08054,-13.10146 -0.18078,53.8627 -12.35052,12.73876 z"
+       id="path5038"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path5163"
+       d="m 206.32136,479.21243 12.34716,-12.2119 28.26293,0 28.26293,0 -11.87471,12.2119 z"
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 454.58697,403.84424 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       id="rect4226-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 371.24939,370.00413 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       id="rect4226-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 443.60157,508.01623 40.89285,-40.89285 40.89286,40.89285 -40.89286,40.89286 z"
+       id="rect4226"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5151"
+       d="m 203.92455,611.05181 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 203.92455,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="path5153"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5155"
+       d="m 270.59462,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 270.59462,611.05181 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="path5157"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;color:#000000;fill:#333333;fill-opacity:1;stroke:none;stroke-width:9.60000038;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 337.26469,676.20664 0,-57.83123 57.83123,0 0,57.83123 z"
+       id="path5161"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path5279"
+       d="m 223.16446,463.04784 12.34715,-12.21191 8.49634,0 19.76659,0 28.26293,0 -11.87471,12.21191 z"
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 239.44851,446.94215 12.34715,-12.21189 28.26294,0 28.26293,0 -11.87472,12.21189 z"
+       id="path5281"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 291.55881,463.04784 12.34714,-12.21191 8.49634,0 19.7666,0 28.26293,0 -11.87471,12.21191 z"
+       id="path5285"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path5287"
+       d="m 307.84286,446.94215 12.34715,-12.21189 28.26294,0 28.26293,0 -11.87472,12.21189 z"
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+    <path
+       style="opacity:0.98999999;fill:#333333;fill-opacity:1"
+       d="m 376.60101,446.94215 12.34714,-12.21189 28.26295,0 28.26292,0 -11.87471,12.21189 z"
+       id="path5289"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/homero/public_html/cuberep/CubeSoftware/logo.png"
+       inkscape:export-xdpi="18"
+       inkscape:export-ydpi="18" />
+  </g>
+</svg>

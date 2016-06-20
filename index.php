@@ -45,7 +45,8 @@ if(!isset($_SESSION['login_user'])) {
     } else {
         ?>
         <div class="div-login"> 
-        <h1>Login</h1><br>
+        <div class="col50 small" style="padding: 0; margin-top: 30px; margin-bottom: 0; position: relative;"><h1>Login</h1></div>
+        <div class="col50" style="text-align:right;"><img src="logo.svg" style="width: 106px"></div>
         <form method="POST" action="index.php">
 
         <?php

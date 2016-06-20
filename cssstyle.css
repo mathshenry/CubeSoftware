@@ -363,14 +363,20 @@ h1, h2 {
     margin: 0px;
     padding: 0px;
     font-weight: lighter;
-    font-family: Arial;
+    font-family: "Arial";
+}
+
+hr{
+    text-decoration: none;
+    color: #333333;
+    background-color: #333333;
+
 }
 
 h1{
-    text-align: center;
-    color: #DDDDDD;
+    color: #333333;
+    text-align: left;
     font-size: 74px;
-    text-shadow: -1px 1px 6px #888888;
 }
 
 h2{
@@ -572,11 +578,10 @@ req {
         display:none;
     }
 }
-.col10, .col80, .col90, .col20, .col100{
+.col10, .col20, .col30, .col40, .col45, .col50, .col55, 
+.col60, .col70, .col80, .col90, .col100{
     box-sizing: border-box;
     float: left;
-    padding: 5px;
-    margin-right: 10px;
 }
 .col10{
     width: 10%;
@@ -584,12 +589,36 @@ req {
 .col20{
     width: 20%;
 }
+.col30{
+    width: 30%;
+}
+.col40{
+    width: 40%;
+}
+.col45{
+    width: 45%;
+}
 
+.col50{
+    width: 50%;
+}
+.col55{
+    width: 55%;
+}
+.col60{
+    width: 60%;
+}
+.col70{
+    width: 70%;
+}
 .col80{
     width: 80%;
 }
-.col90{
+.col80{
     width: 85%;
+}
+.col90{
+    width: 90%;
 }
 .col100{
     width: 100%;
