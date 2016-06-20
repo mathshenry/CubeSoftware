@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<estoques><estoque><nome>333</nome><detalhes/><item><nome>12</nome><status>0</status></item><item><nome>we</nome><status>1</status></item><item><nome>ee</nome><status>1</status></item></estoque></estoques>
+<estoques><estoque><nome>333</nome><detalhes/><item><nome>we</nome><status>0</status></item><item><nome>ee</nome><status>1</status></item></estoque></estoques>
