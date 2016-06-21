@@ -15,11 +15,11 @@ if(!Allowed('users', 'read')){
     Header("location: ../access_denied.php");
     exit;
 }
-
-
-echo "<div class=div-body>";
-echo "<h1>Usuários</h1><br><br>";
 ?>
+
+<div class=div-body>
+<h1>Usuários</h1><hr><br>
+
         <table id='users'>
         <th>Nome</th>
         <th>Usuário</th>
@@ -28,15 +28,14 @@ echo "<h1>Usuários</h1><br><br>";
 $usr = simplexml_load_file('usuarios.xml');
 foreach ($usr->usuario as $user) {
         echo "<tr onclick =\"location.href=
-            'userdetails.php?detalhes=". $user->usuario . "'\"><td>";
-        echo "<b>".strval($user->nome) . "</b></td>";
-        echo "<td>";
-        echo strval($user->usuario) . "</td>";
-        echo "<td>";
-        echo strval($user->perfil) . "</td>";
+            'userdetails.php?detalhes=". $user->usuario . "'\">";
+        echo "<td><b>" . strval($user->nome) . "</b></td>";
+        echo "<td>" . strval($user->usuario) . "</td>";
+        echo "<td>" . strval($user->perfil) . "</td>";
         echo "</tr>";
 }
-    echo "</table>";
 ?>
+</table>
+</div>
 </body>
 </html>

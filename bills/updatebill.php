@@ -48,7 +48,7 @@ $(function() {
 
 <div class="div-cad"> 
 <h1>Cadastrar Conta</h1>
-
+<hr>
 <?php
 
 $id;

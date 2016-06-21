@@ -47,6 +47,7 @@ function validateForm() {
 
 <div class="div-cad"> 
 <h1>Cadastrar Tarefa</h1>
+<hr>
 
 <?php
 

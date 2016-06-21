@@ -366,17 +366,18 @@ h1, h2 {
     font-family: "Arial";
 }
 
-hr{
-    text-decoration: none;
-    color: #333333;
-    background-color: #333333;
-
+hr {
+    border-width: 0; 
+    height: 1px;
+    border-top-width: 1px;
+    color: #AAAAAA;
+    background-color: #AAAAAA;
 }
 
 h1{
     color: #333333;
     text-align: left;
-    font-size: 74px;
+
 }
 
 h2{

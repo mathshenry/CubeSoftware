@@ -18,7 +18,7 @@ if(!Allowed('profiles', 'read')){
 
 
 echo "<div class='div-body'>";
-echo "<h1>Perfis</h1><br>";
+echo "<h1>Perfis</h1><hr><br>";
 
 $profiles = simplexml_load_file('profiles.xml');
 foreach ($profiles->perfil as $profile) {

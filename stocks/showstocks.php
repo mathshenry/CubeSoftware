@@ -40,7 +40,7 @@ if(!Allowed('stocks', 'read')){
 }
 ?>
 <div class=div-body>
-<h1>Estoques</h1><br><br>
+<h1>Estoques</h1><hr><br>
 
 <strong>Estoques: </strong>
 <?php 

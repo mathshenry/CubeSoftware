@@ -66,7 +66,7 @@ foreach($despesas as $data=>$despesa){
 ?>
 
 <div class='div-body'>
-<h1>Despesas</h1><br>
+<h1>Despesas</h1><hr><br>
 
 <form name='newbill' action='bills.php' method='GET' enctype='multipart/form-data'>
 <div class="start">

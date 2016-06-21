@@ -24,7 +24,7 @@ if($_GET['mode']=='update')
     echo "<h1>Alterar Dados</h1><br>";
 else
 echo "<h1>Cadastrar Quarto</h1>";
-
+echo "<hr>";
 
 $number="";
 $details="";

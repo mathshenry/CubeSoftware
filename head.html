@@ -95,7 +95,7 @@ if(isset($_SESSION['login_user'])) {
     <right><label class='droplbl-user' style='border-radius: 0 0 16px 0;'>
             <?php echo $_SESSION['login_user']; ?> </label></right>
     <div class='dropdown-content dd-user'>
-    <?php echo "<a style='border-radius: 0 16px 0 0;' href='<?php echo $local_path; ?>users/userdetails.php?detalhes=".
+    <?php echo "<a style='border-radius: 0 16px 0 0;' href='".$local_path."users/userdetails.php?detalhes=".
     $_SESSION["login_user"]."'>Meus Dados</a>";?>
     <a href='<?php echo $local_path; ?>closesession.php' 
         style='border-radius: 0 0 16px 16px;'>Sair</a>
