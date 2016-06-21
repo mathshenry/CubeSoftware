@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<title>Relatório</title>
 <link rel='stylesheet' href='../cssstyle.css'>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
@@ -66,7 +67,7 @@ foreach($despesas as $data=>$despesa){
 ?>
 
 <div class='div-body'>
-<h1>Despesas</h1><hr><br>
+<h1>Despesas</h1><br>
 
 <form name='newbill' action='bills.php' method='GET' enctype='multipart/form-data'>
 <div class="start">

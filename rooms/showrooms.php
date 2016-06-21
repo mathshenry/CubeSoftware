@@ -17,7 +17,7 @@ if(!Allowed('rooms', 'read')){
 }
 
 echo "<div class=div-body>";
-echo "<h1>Quartos</h1><hr><br>";
+echo "<h1>Quartos</h1><br><br>";
 
 $rooms = simplexml_load_file('rooms.xml');
 foreach ($rooms->quarto as $room) {

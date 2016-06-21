@@ -23,6 +23,7 @@ menu {
     top: 0;
     width: 100%;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: -1px -1px 40px white;
 }
 
 .cad-link {
@@ -98,6 +99,7 @@ li a.reports:hover:not(.active) {
     width: 100%;
     box-shadow: -2px 8px 16px 0px rgba(0,0,0,0.5);
     text-align: center;
+    box-shadow: -1px -1px 30px white;
 }
 .dropdown-content a {
     background-color: #444444;
@@ -106,12 +108,13 @@ li a.reports:hover:not(.active) {
     padding-bottom: 14px;
     text-decoration: none;
     text-align: center;
-    display: block;
+    display: block; 
 }
 
 .dropdown:hover .droplbl-menu{
     background-color: #444444;
     color: lightgrey;
+
 }
 
 .dropdown:hover .droplbl-user{
@@ -268,6 +271,7 @@ input[type=submit].reports:hover{
     background-color: #28a428;
 }
 
+
 .login_err{
     color: #E20000;
     border-radius: 3px;
@@ -366,18 +370,17 @@ h1, h2 {
     font-family: "Arial";
 }
 
-hr {
-    border-width: 0; 
-    height: 1px;
-    border-top-width: 1px;
-    color: #AAAAAA;
-    background-color: #AAAAAA;
+hr{
+    text-decoration: none;
+    color: #333333;
+    background-color: #333333;
+
 }
 
 h1{
     color: #333333;
     text-align: left;
-
+    font-size: 74px;
 }
 
 h2{
@@ -642,6 +645,47 @@ req {
     min-width: 165px;
     padding: 10px;
     float: left;
+}
+
+#company{
+    background-position: center;
+    background-color: lightblue;
+    width: 50%;
+    height: auto;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px white;
+
+}
+
+#description{
+    text-align: center; 
+    color: black;
+    font-family: Lucida Console;
+    line-height: 20px;
+}
+
+#descpLink{
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+#descpLink a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+#descpLink a:hover{
+    color: black;
+    background-color: gray;
+}
+
+.about a:hover{
+    background-color: lightblue;
 }
 
 

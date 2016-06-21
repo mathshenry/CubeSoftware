@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if(isset($_SESSION['login_user'])) {
 
     //troque esse caminho pelo caminho pelo caminho do site
@@ -10,97 +10,113 @@ if(isset($_SESSION['login_user'])) {
     //
     //    resulta em: $local_path="/cuberep/CubeSoftware/";
 
-    $local_path="/cuberep/CubeSoftware/";
+    $local_path="/CSS/";
 
 ?>
 
 <menu>
     <img style="display:block; color: white; float: left; width: 35px; padding:2px 2px 2px 5px;" src="<?php echo $local_path; ?>logo-sprite.svg" alt="CubeSoftware">
+
     <li><a class='users' style="border-radius: 0 0 0 16px;"
     href="<?php echo $local_path; ?>users/showusers.php">USUÁRIOS
     </a></li>
-    <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='tasks' >TAREFAS &#9662</label>
-        <span class="caret"></span></button>
 
-        <div class='dropdown-content tasks dd-menu'>
-            <a
-            href="<?php echo $local_path; ?>tasks/showtasks.php">Listar Tarefas
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>tasks/updatetask.php?mode=create">Nova Tarefa
-            </a>
-        </div>
-    </div>
     <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='bills'>CONTAS &#9662</label>
-        <div class='dropdown-content bills dd-menu'>
-            <a
-            href="<?php echo $local_path; ?>bills/showbills.php">Visualizar
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>bills/updatebill.php?mode=create">Cadastrar
-            </a>
-        </div>
+        <label class='droplbl-menu' id='tasks' >TAREFAS &#9662</label>
+            <span class="caret"></span></button>
+
+            <div class='dropdown-content tasks dd-menu'>
+                <a
+                href="<?php echo $local_path; ?>tasks/showtasks.php">Listar Tarefas
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>tasks/updatetask.php?mode=create">Nova Tarefa
+                </a>
+            </div>
     </div>
+
     <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='rooms'>QUARTOS &#9662</label>
-        <div class='dropdown-content rooms dd-menu'>
-            <a
-            href="<?php echo $local_path; ?>rooms/showrooms.php">Relação de Quartos
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>rooms/updateroom.php?mode=create">Adicionar
-            </a>
-        </div>
+        <label class='droplbl-menu' id='bills'>CONTAS &#9662</label>
+            <div class='dropdown-content bills dd-menu'>
+                <a
+                href="<?php echo $local_path; ?>bills/showbills.php">Visualizar
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>bills/updatebill.php?mode=create">Cadastrar
+                </a>
+            </div>
     </div>
+
     <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='menustocks'>ESTOQUES &#9662</label>
-        <div class='dropdown-content stocks dd-menu'>
-            <a
-            href="<?php echo $local_path; ?>stocks/showstocks.php">Visualizar
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>stocks/updatestock.php?mode=create">Novo Estoque
-            </a>
-        </div>
+        <label class='droplbl-menu' id='rooms'>QUARTOS &#9662</label>
+            <div class='dropdown-content rooms dd-menu'>
+                <a
+                href="<?php echo $local_path; ?>rooms/showrooms.php">Relação de Quartos
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>rooms/updateroom.php?mode=create">Adicionar
+                </a>
+            </div>
     </div>
+
     <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='profiles'>PERFIS &#9662</label>
-        <div class='dropdown-content dd-menu profiles'>
-            <a
-            href="<?php echo $local_path; ?>profiles/showprofiles.php">Listar Perfis
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>profiles/updateprofile.php?mode=create">Criar
-            </a>
-        </div>
+        <label class='droplbl-menu' id='menustocks'>ESTOQUES &#9662</label>
+            <div class='dropdown-content stocks dd-menu'>
+                <a
+                href="<?php echo $local_path; ?>stocks/showstocks.php">Visualizar
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>stocks/updatestock.php?mode=create">Novo Estoque
+                </a>
+            </div>
     </div>
+
     <div class='dropdown menubar'>
-    <label class='droplbl-menu' id='complaints' style="width: 120px;">RECLAMAÇÕES &#9662</label>
-        <div class='dropdown-content dd-menu complaints'>
-            <a
-            href="<?php echo $local_path; ?>complaints/showcomplaints.php">Ver Reclamações
-            </a>
-            <a style="border-radius: 0 0 16px 16px;"
-            href="<?php echo $local_path; ?>complaints/updatecomplaint.php?mode=create">Fazer Reclamação
-            </a>
-        </div>
+        <label class='droplbl-menu' id='profiles'>PERFIS &#9662</label>
+            <div class='dropdown-content dd-menu profiles'>
+                <a
+                href="<?php echo $local_path; ?>profiles/showprofiles.php">Listar Perfis
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>profiles/updateprofile.php?mode=create">Criar
+                </a>
+            </div>
     </div>
+
+    <div class='dropdown menubar'>
+        <label class='droplbl-menu' id='complaints' style="width: 120px;">RECLAMAÇÕES &#9662</label>
+            <div class='dropdown-content dd-menu complaints'>
+                <a
+                href="<?php echo $local_path; ?>complaints/showcomplaints.php">Ver Reclamações
+                </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>complaints/updatecomplaint.php?mode=create">Fazer Reclamação
+                </a>
+            </div>
+    </div>
+
+    <div class="dropdown menubar">
+        <label class="droplbl-menu" id="about" style="width:100px;">SOBRE &#9662</label></right>
+            <div class="dropdown-content dd-menu about">
+                <a href="<?php echo $local_path; ?>about/software.php">O Software </a>
+                <a href="<?php echo $local_path; ?>about/company.php">A Empresa </a>
+            </div>
+    </div>
+
     <li><a class='reports' id='reports' style="width: 110px; border-radius: 0;"
     href="<?php echo $local_path; ?>reports/bills.php">ESTATÍSTICAS
     </a></li>
 
+
     <div class='dropdown user' >
-    <right><label class='droplbl-user' style='border-radius: 0 0 16px 0;'>
+        <right><label class='droplbl-user' style='border-radius: 0 0 16px 0;'>
             <?php echo $_SESSION['login_user']; ?> </label></right>
-    <div class='dropdown-content dd-user'>
-    <?php echo "<a style='border-radius: 0 16px 0 0;' href='".$local_path."users/userdetails.php?detalhes=".
-    $_SESSION["login_user"]."'>Meus Dados</a>";?>
-    <a href='<?php echo $local_path; ?>closesession.php' 
-        style='border-radius: 0 0 16px 16px;'>Sair</a>
+            <div class='dropdown-content dd-user'>
+                <?php echo "<a style='border-radius: 0 16px 0 0;' href='<?php echo $local_path; ?>users/userdetails.php?detalhes=".$_SESSION["login_user"]."'>Meus Dados</a>"; ?>
+                <a href='<?php echo $local_path; ?>closesession.php' style='border-radius: 0 0 16px 16px;'>Sair</a>
+            </div>
     </div>
-    </div>
+
 <?php } ?>
 </menu>
 

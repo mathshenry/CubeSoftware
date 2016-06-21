@@ -17,7 +17,7 @@ if(!Allowed('complaints', 'read')){
 }
 
 echo "<div class=div-body>";
-echo "<h1>Reclamações</h1><hr><br>";
+echo "<h1>Reclamações</h1><br><br>";
 
 $complaints = simplexml_load_file('complaints.xml');
 $users = simplexml_load_file('../users/usuarios.xml');

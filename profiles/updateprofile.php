@@ -27,10 +27,9 @@ if ($_GET['mode']=='update' && $profile=="Administrador"){
 <?php
 
 if($_GET['mode']=='update')
-    echo "<h1>Alterar Perfil</h1>";
+    echo "<h1>Alterar Perfil</h1><br>";
 else
 echo "<h1>Novo Perfil</h1>";
-echo "<hr><br>";
 
 
 $name="";

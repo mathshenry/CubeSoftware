@@ -17,7 +17,7 @@ if(!Allowed('tasks', 'read')){
 }
 
 echo "<div class=div-body>";
-echo "<h1>Tarefas</h1><hr><br>";
+echo "<h1>Tarefas</h1><br><br>";
 ?>
         <table id='tasks'>
         <th>Título</th>
