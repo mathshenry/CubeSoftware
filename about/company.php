@@ -34,6 +34,30 @@
 
 </div>
 
+<div style="clear:both; width: 50%; margin:auto;"></div>
+
+<div id="company2">
+	<img src="http://adm-net-a.unifei.edu.br/intranet/arquivos/imagens/logos/LogoEFEItrans.gif" style="width:200px; float:right;margin-right: 15px; margin-top: 30px; margin-bottom: 10px;">
+
+	<h3 style="line-height: 40px; color: black;">
+		Universidade Federal de Itajubá<br>
+	</h1>
+
+	<p id="description">
+		"A Universidade Federal de Itajubá - UNIFEI, fundada em 23 de novembro de 1913, com o nome de Instituto Eletrotécnico e Mecânico de Itajubá - IEMI, por iniciativa pessoal do advogado Theodomiro Carneiro Santiago, foi a décima Escola de Engenharia a se instalar no país."
+	<p>
+
+	<div id="descpLink">
+		<a href="https://www.unifei.edu.br/" target="_blank">Acesse o site da Universidade</a>
+	</div>
+
+</div>
+
+<div style="clear:both; width: 50%; margin:auto;"></div>
+
+<?php
+	include("../footnote.html");
+?>
 
 </body>
 </html>

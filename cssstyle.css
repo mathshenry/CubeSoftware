@@ -652,7 +652,10 @@ req {
     background-color: lightblue;
     width: 50%;
     height: auto;
-    margin: 100px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 30px white;
 
@@ -674,6 +677,12 @@ req {
     color: black;
 }
 
+#descpLink a:link{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 #descpLink a:visited{
     color:black;
     text-decoration: none;
@@ -688,6 +697,55 @@ req {
     background-color: lightblue;
 }
 
+#company2{
+    background-position: center;
+    background-color: lightgreen;
+    width: 50%;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px white;
+    font-family: Lucida Console;
+    font-weight: bold;
+}
+
+#rodape{
+    color: white;
+    font-size: 10px;
+    font-style: italic;    
+}
+
+#software{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: lightyellow;
+    width: 50%;
+    height: auto;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 30px;
+}
+
+#softtext{
+    color: black;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+
+.affix {
+      top:0;
+      width: 100%;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
 
 
 .autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
