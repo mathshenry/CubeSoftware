@@ -9,8 +9,8 @@ if(isset($_SESSION['login_user'])) {
     //    site:       C:\wamp64\www\cuberep\CubeSoftware\
     //
     //    resulta em: $local_path="/cuberep/CubeSoftware/";
-
-    $local_path="/CSS/";
+    
+   $local_path="/cuberep/CubeSoftware/";
 
 ?>
     
@@ -100,7 +100,7 @@ if(isset($_SESSION['login_user'])) {
         <label class="droplbl-menu" id="about" style="width:100px;">SOBRE &#9662</label></right>
             <div class="dropdown-content dd-menu about">
                 <a href="<?php echo $local_path; ?>about/software.php">O Software </a>
-                <a href="<?php echo $local_path; ?>about/company.php">A Empresa </a>
+                <a style="border-radius: 0 0 16px 16px;" href="<?php echo $local_path; ?>about/company.php">A Empresa </a>
             </div>
     </div>
 
@@ -113,7 +113,7 @@ if(isset($_SESSION['login_user'])) {
         <right><label class='droplbl-user' style='border-radius: 0 0 16px 0;'>
             <?php echo $_SESSION['login_user']; ?> </label></right>
             <div class='dropdown-content dd-user'>
-                <?php echo "<a style='border-radius: 0 16px 0 0;' href='<?php echo $local_path; ?>users/userdetails.php?detalhes=".$_SESSION["login_user"]."'>Meus Dados</a>"; ?>
+                <a style='border-radius: 0 16px 0 0;' href='<?php echo $local_path; ?>users/userdetails.php?detalhes=<?php echo $_SESSION["login_user"]; ?>'>Meus Dados</a>
                 <a href='<?php echo $local_path; ?>closesession.php' style='border-radius: 0 0 16px 16px;'>Sair</a>
             </div>
     </div>

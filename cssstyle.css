@@ -23,7 +23,6 @@ menu {
     top: 0;
     width: 100%;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-    box-shadow: -1px -1px 40px white;
 }
 
 .cad-link {
@@ -99,7 +98,6 @@ li a.reports:hover:not(.active) {
     width: 100%;
     box-shadow: -2px 8px 16px 0px rgba(0,0,0,0.5);
     text-align: center;
-    box-shadow: -1px -1px 30px white;
 }
 .dropdown-content a {
     background-color: #444444;
