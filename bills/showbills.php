@@ -3,7 +3,6 @@
 
 <head>
 <link rel='stylesheet' href='../cssstyle.css'>
-<title>Contas</title>
 </head>
 <body>
 
@@ -18,7 +17,7 @@ if(!Allowed('bills', 'read')){
 }
 
 echo "<div class=div-body>";
-echo "<h1>Contas</h1><br><br>";
+echo "<h1>Contas</h1><hr><br>";
 ?>
         <table id='bills'>
         <th>Tipo</th>
@@ -49,5 +48,6 @@ foreach ($bills->conta as $bill) {
 }
     echo "</table>";
 ?>
+</div>
 </body>
 </html>

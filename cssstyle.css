@@ -106,13 +106,12 @@ li a.reports:hover:not(.active) {
     padding-bottom: 14px;
     text-decoration: none;
     text-align: center;
-    display: block; 
+    display: block;
 }
 
 .dropdown:hover .droplbl-menu{
     background-color: #444444;
     color: lightgrey;
-
 }
 
 .dropdown:hover .droplbl-user{
@@ -269,7 +268,6 @@ input[type=submit].reports:hover{
     background-color: #28a428;
 }
 
-
 .login_err{
     color: #E20000;
     border-radius: 3px;
@@ -368,17 +366,18 @@ h1, h2 {
     font-family: "Arial";
 }
 
-hr{
-    text-decoration: none;
-    color: #333333;
-    background-color: #333333;
-
+hr {
+    border-width: 0; 
+    height: 1px;
+    border-top-width: 1px;
+    color: #AAAAAA;
+    background-color: #AAAAAA;
 }
 
 h1{
     color: #333333;
     text-align: left;
-    font-size: 74px;
+
 }
 
 h2{
@@ -645,105 +644,6 @@ req {
     float: left;
 }
 
-#company{
-    background-position: center;
-    background-color: lightblue;
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 30px white;
-
-}
-
-#description{
-    text-align: center; 
-    color: black;
-    font-family: Lucida Console;
-    line-height: 20px;
-}
-
-#descpLink{
-    text-align: center;
-    line-height: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-    color: black;
-}
-
-#descpLink a:link{
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#descpLink a:visited{
-    color:black;
-    text-decoration: none;
-}
-
-#descpLink a:hover{
-    color: black;
-    background-color: gray;
-}
-
-.about a:hover{
-    background-color: lightblue;
-}
-
-#company2{
-    background-position: center;
-    background-color: lightgreen;
-    width: 50%;
-    height: auto; 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 30px white;
-    font-family: Lucida Console;
-    font-weight: bold;
-}
-
-#rodape{
-    color: white;
-    font-size: 10px;
-    font-style: italic;    
-}
-
-#software{
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    background-color: lightyellow;
-    width: 50%;
-    height: auto;
-    box-shadow: 1px 1px 20px white;
-    border-radius: 30px;
-}
-
-#softtext{
-    color: black;
-    font-weight: bold;
-    line-height: 30px;
-    text-align: center;
-}
-
-.affix {
-      top:0;
-      width: 100%;
-  }
-
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
-  }
 
 
 .autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
