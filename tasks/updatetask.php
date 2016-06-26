@@ -14,20 +14,30 @@ load_names();
 ?>
 
 <head>
+<link rel="stylesheet" type='text/css' href="../jquery-ui-timepicker-addon.css">
+<link rel="stylesheet" type='text/css' href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel='stylesheet' href='../cssstyle.css'>
 
 <script src="../js/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
 <script src="../js/jquery.maskedinput.js"></script>
 <script src="../js/jquery.autocomplete.min.js"></script>
 <script src="../js/nameslist-autocomplete.js"></script>
+<script src="../js/jquery-ui-timepicker-addon.js"></script>
+
 
 <script>
 $(function(){
-    $("#data").mask("99/99/9999",{placeholder:""});
-    $("#recv").mask("99/99/9999",{placeholder:""});
+    $("#data").datetimepicker({
+            dateFormat: 'dd/mm/yy',
+            timeInput: true,
+            showMillisec: false,
+            showMicrosec: false,
+            showTimezone: false
 });
-
+})
 </script>
+
 <script>
 function validateForm() {
     var nome = document.forms['newtask']['respuser'].value;
@@ -47,6 +57,7 @@ function validateForm() {
 
 <div class="div-cad"> 
 <h1>Cadastrar Tarefa</h1>
+<hr>
 
 <?php
 
@@ -84,7 +95,7 @@ echo '<p>Título: <req>*</req> ';
 echo '<input type="text" required name="title" value="' . $title . '"><br>';
 
 echo '<p>Data Limite <req>*</req> ';
-echo '<input type="datetime-local" required name="data" value="' . $data . '"><br>';
+echo '<input type="text" required id="data" name="data" value="' . $data . '"><br>';
 
 echo '<p>Pessoa Responsável: <req>*</req>';
 echo '<input type="text" required name="respuser" id="autocomplete" value="' . $respuser . '"><br>';

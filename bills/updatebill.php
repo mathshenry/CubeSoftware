@@ -15,8 +15,8 @@ load_names();
 
 <head>
 <link rel='stylesheet' href='../cssstyle.css'>
-
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 <script src="../js/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
 <script src="../js/jquery.maskedinput.js"></script>
@@ -48,7 +48,7 @@ $(function() {
 
 <div class="div-cad"> 
 <h1>Cadastrar Conta</h1>
-
+<hr>
 <?php
 
 $id;

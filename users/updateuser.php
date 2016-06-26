@@ -34,7 +34,7 @@ if($_GET['mode']=='update')
     echo "<h1>Alterar Dados</h1><br>";
 else
     echo "<h1>Cadastrar</h1><br>";
-
+echo "<hr>";
 
 $name="";
 $user="";

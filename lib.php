@@ -97,7 +97,7 @@ function Allowed($crud, $op){
                         $param1=(string)$perfil->perfis;
                         break;
                     case 'users':
-                        $username;
+                        $username="";
                         if(isset($_GET['detalhes'])) $username=$_GET['detalhes'];
                         elseif(isset($_GET['user'])) $username=$_GET['user'];
                         elseif(isset($_POST['user'])) $username=$_POST['user'];
@@ -210,15 +210,46 @@ function FilterPass($crud,$entity){
                 }
             }
             break;
+        case "tasks":
+            if(isset($_GET['respuser'])){
+                if(strval($entity->usuresp)!=$_GET['respuser']
+                    && $_GET['respuser']!="")
+                    $S=false;
+            }
+            if(isset($_GET['status'])){
+                if(strval($entity->status)!=$_GET['status'])
+                    $S=false;
+            }
+            if(isset($_GET['start'])){
+                $start=10000*date_to_val($_GET['start']);
+                $data=date_to_val($entity->cdata);
+                if($data<$start)
+                    $S=false;
+            }
+            if(isset($_GET['end'])){
+                if(strcmp($_GET['end'],"")){
+                    $end=10000*date_to_val($_GET['end']);
+                    $data=date_to_val($entity->cdata);
+                    if($data>$end)
+                        $S=false;
+                }
+            }
+            break;
         default:
         }
    return $S;
 }
 
 function date_to_val($date){
-        return intval(substr(strval($date),6).
+        
+        $outputstr = substr(strval($date),6,4).
             substr(strval($date),3,2).
-            substr(strval($date),0,2));
+            substr(strval($date),0,2);
+        if (strlen($date)>10){
+            $outputstr.= substr(strval($date),11,2).
+            substr(strval($date),14,2);
+        }
+        return intval($outputstr);
 }
 
 function fill_gaps(&$data){
@@ -228,7 +259,6 @@ function fill_gaps(&$data){
     foreach($data as $d=>$v){
         if($previous==0){
             $previous=intval($d);
-            echo "yes! ";
             continue;
         }
         $prev_year=floor($previous/100);

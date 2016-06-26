@@ -100,19 +100,26 @@ if(isset($_SESSION['login_user'])) {
         <label class="droplbl-menu" id="about" style="width:100px;">SOBRE &#9662</label></right>
             <div class="dropdown-content dd-menu about">
                 <a href="<?php echo $local_path; ?>about/software.php">O Software </a>
-                <a style="border-radius: 0 0 16px 16px;" href="<?php echo $local_path; ?>about/company.php">A Empresa </a>
+                <a style="border-radius: 0 0 16px 16px;"
+                href="<?php echo $local_path; ?>about/company.php">A Empresa </a>
             </div>
     </div>
-
-    <li><a class='reports' id='reports' style="width: 110px; border-radius: 0;"
-    href="<?php echo $local_path; ?>reports/bills.php">ESTATÍSTICAS
+    <div class="dropdown menubar">
+        <label class="droplbl-menu" id="about" style="width:110px;">ESTATÍSTICAS &#9662</label></right>
+            <div class="dropdown-content dd-menu reports">
+                <a href="<?php echo $local_path; ?>reports/tasks.php">Tarefas</a>
+                <a style="border-radius: 0 0 16px 16px; width: 110px;"
+                href="<?php echo $local_path; ?>reports/bills.php">Despesas
+                </a>
+            </div>
+    </div>
     </a></li>
 
 
     <div class='dropdown user' >
         <right><label class='droplbl-user' style='border-radius: 0 0 16px 0;'>
             <?php echo $_SESSION['login_user']; ?> </label></right>
-            <div class='dropdown-content dd-user'>
+            <div class='dropdown-content dd-usear'>
                 <a style='border-radius: 0 16px 0 0;' href='<?php echo $local_path; ?>users/userdetails.php?detalhes=<?php echo $_SESSION["login_user"]; ?>'>Meus Dados</a>
                 <a href='<?php echo $local_path; ?>closesession.php' style='border-radius: 0 0 16px 16px;'>Sair</a>
             </div>

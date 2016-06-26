@@ -21,9 +21,10 @@ if(!Allowed('complaints','update')){
 
 <?php
 if($_GET['mode']=='update')
-    echo "<h1>Alterar Dados</h1><br>";
+    echo "<h1>Alterar Dados</h1>";
 else
 echo "<h1>Cadastrar Reclamação</h1>";
+echo "<hr><br>";
 
 $id="";
 $subject="";
