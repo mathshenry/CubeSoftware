@@ -9,6 +9,7 @@
 
 <?php
 session_start();
+include("lib.php");
 include("head.html");
 
 if(!isset($_SESSION['login_user'])) {

@@ -1,4 +1,16 @@
 <?php
+
+//troque esse caminho pelo caminho pelo caminho do site
+//no seu computador a partir da pasta raiz do servidor.
+//
+//Ex.: 
+//    servidor:   C:\wamp64\www\
+//    site:       C:\wamp64\www\cuberep\CubeSoftware\
+//
+//    resulta em: $local_path="/cuberep/CubeSoftware/";
+
+$local_path = "/cuberep/CubeSoftware/";
+
 function get_month($mn){
     $month="";
     switch($mn){
@@ -252,6 +264,14 @@ function date_to_val($date){
         return intval($outputstr);
 }
 
+function datecmp($date1, $date2){
+    if(strlen($date1)<11) $date1.=" 0000";
+    if(strlen($date2)<11) $date2.=" 0000";
+    $date1 = intval(date_to_val($date1));
+    $date2 = intval(date_to_val($date2));
+    return ($date2-$date1);
+}
+
 function fill_gaps(&$data){
 
     $atp=array();
@@ -279,6 +299,26 @@ function fill_gaps(&$data){
     }
     $data=$data+$atp;
     ksort($data);
+}
+
+function addhistory($user){
+
+    $hist = simplexml_load_file('historys.xml');
+
+    $newhistory=$hist->addChild('historico');
+    $newhistory->addChild('usuario', $user);
+
+    $newabstract=$newhistory->addChild('resumo');
+    $newabstract->addChild('quarto', 0);
+    $newabstract->addChild('contas', 0);
+    $newabstract->addChild('tarefas', 0);
+    $newabstract->addChild('reclam', 0);
+
+    $newhistory->addChild('log');
+
+    $hist->asXML('historys.xml');  
+
+    echo "history added";
 }
 
 ?>

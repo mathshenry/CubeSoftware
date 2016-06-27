@@ -533,7 +533,7 @@ req {
 
 .start, .end{
     box-sizing: border-box;
-    width: 30%;
+    width: 22%;
     float: left;
     padding: 5px;
 }
@@ -546,11 +546,18 @@ req {
     float: left;
 }
 
+.pessoa{
+    box-sizing: border-box;
+    width: 45%;
+    min-width: 120px;
+    padding: 5px 0px 5px 10px;
+    float: left;
+}
 .submit{
     box-sizing: border-box;
     width: 10%;
     padding: 18px 0px 5px 10px;
-    float: left;
+    float: right;
 
 }
 

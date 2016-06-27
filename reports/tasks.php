@@ -68,7 +68,7 @@ Fim:
 <input type="text" class="calendario" name="end" placeholder="Nenhum" value="<?php echo $end;?>">
 </div>
 
-<div class="tipo">
+<div class="pessoa">
 Pessoa Responsável
 <input type="text" name="respuser" id="autocomplete" value="<?php echo $respuser; ?>"><br>
 </div>

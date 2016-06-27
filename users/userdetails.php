@@ -25,6 +25,7 @@ foreach ($usr->usuario as $user) {
     if(!strcmp(strval($user->usuario),$usrname)){
         echo "<p class='small'><h2>" . strval($user->nome) . "</h2>";
         echo "<div class=p-p>".strval($user->perfil)."</div>";
+        echo "<a href='../historys/historydetails.php?user=".$usrname."'>Histórico</a>";
         echo "</p><br>";
         echo "<STRONG>Usuário: </STRONG>" . 
             strval($user->usuario);
