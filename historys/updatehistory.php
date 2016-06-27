@@ -13,12 +13,6 @@ foreach ($hist->historico as $history) {
         $success=true;
         switch ($_GET['mode']){
             case 'task':
-                foreach ($bills->conta as $bill) {
-                    if(!strcmp(strval($bill->id), $_GET['id'])){
-                        $expdate=$bill->cdate;
-                        break;
-                    }
-                }
                 $entry="[".$_GET['date']."]";
                 if(datecmp($_GET['expdate'], $_GET['date'])<0)
                     $entry.=" Tarefa cumprida";
@@ -27,6 +21,16 @@ foreach ($hist->historico as $history) {
                 
                 $history->log->addChild('registro',$entry);
                 break;
+           case 'bill':
+                $entry="[".$_GET['date']."]";
+                if(datecmp($_GET['expdate'], substr($_GET['date'],0,10))<=0)
+                    $entry.=" Conta quitada";
+                else
+                    $entry.=" Conta quitada após o vencimento";
+                
+                $history->log->addChild('registro',$entry);
+                break;
+ 
             default:
         }
     }

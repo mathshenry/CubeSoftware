@@ -1,2 +1,2 @@
 <?xml version="1.0"?>
-<estoques><estoque><nome>333</nome><detalhes/><item><nome>we</nome><status>0</status></item><item><nome>ee</nome><status>0</status></item><item><nome>ff</nome><status>1</status></item></estoque></estoques>
+<estoques><estoque><nome>Produtos de Limpeza</nome><detalhes>Produtos usados para a limpeza da casa.</detalhes><item><nome>Detergente</nome><status>1</status></item><item><nome>Cera l&#xED;quida</nome><status>0</status></item></estoque><estoque><nome>Alimenta&#xE7;&#xE3;o</nome><detalhes>Produtos de alimenta&#xE7;&#xE3;o em comum aos moradores.</detalhes><item><nome>Feij&#xE3;o</nome><status>0</status></item><item><nome>Caf&#xE9;</nome><status>0</status></item><item><nome>A&#xE7;&#xFA;car</nome><status>1</status></item></estoque></estoques>

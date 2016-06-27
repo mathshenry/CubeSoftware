@@ -265,11 +265,11 @@ function date_to_val($date){
 }
 
 function datecmp($date1, $date2){
-    if(strlen($date1)<11) $date1.=" 0000";
-    if(strlen($date2)<11) $date2.=" 0000";
-    $date1 = intval(date_to_val($date1));
-    $date2 = intval(date_to_val($date2));
-    return ($date2-$date1);
+    if(strlen($date1)<11) $date1.=" 00:00";
+    if(strlen($date2)<11) $date2.=" 00:00";
+    $d1 = intval(date_to_val($date1));
+    $d2 = intval(date_to_val($date2));
+    return ($d2-$d1);
 }
 
 function fill_gaps(&$data){

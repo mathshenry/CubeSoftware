@@ -25,7 +25,7 @@ $hist = simplexml_load_file('historys.xml');
 foreach ($usr->usuario as $user) {
     if(!strcmp(strval($user->usuario),$usrname)){
         echo "<p class='small'><h1>Histórico</h1>";
-        echo "</p><hr><br>";
+        echo "</p><hr>";
         echo "<STRONG>Nome: </STRONG>" . 
             strval($user->nome);
         echo "<P>";
@@ -38,7 +38,8 @@ foreach ($usr->usuario as $user) {
         echo "<STRONG>Data de Nascimento: </STRONG>" . 
             strval($user->nasc);
         echo "<P>";
-        echo "<STRONG>Registro de Atividades: </STRONG>";
+        echo "<hr>";
+        echo "<STRONG>Histórico de Atividades: </STRONG>";
         echo "<div class=p-p>";
             foreach($hist->historico as $historico){
                 if(!strcmp($historico->usuario,$user->nome)){

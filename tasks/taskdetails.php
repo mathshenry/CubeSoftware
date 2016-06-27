@@ -123,7 +123,7 @@ function clickconfirm(id){
             mode: 'task',
             date: confirmdate.format("hammerTime")
         }
-    }).fail(function(data){ alert(JSON.stringify(data)); });
+    });
     
     xhttp.open("GET", "updatestatus.php?id="+id+"&date="+confirmdate.format("hammerTime"), true);
     xhttp.send();
